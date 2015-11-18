@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tim Sheiner: Video Example for Interactions14</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- fonts -->
+    <script type="text/javascript" src="//use.typekit.net/psc6bmd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/customizations.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+    <!-- from --!>
+    <!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+    
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3736663-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	<style>
+		#video-thumbnail {
+			height: 315px;
+			width: 560px;
+			cursor: pointer;
+		}
+		
+		#videoWrapper {
+			/*background-image: url("img/lytesprite.png");*/
+		}
+		
+		.box {
+			width: 580px;
+			padding:10px;
+			margin:30px auto;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<h1>A note about this video</h1>
+		<p>I teach a course in Systems in the Interaction Design Program at the California College of the Arts. This is a video documenting a collaborative project between my students and The Adobe Creative Cloud team.  While it is not a sample of me giving a talk, I do appear in the video several times, both interacting with the students as well speaking directly to the camera to describe the format and goals of the project.</p>
+		<p>I hope from viewing this you will appreciate that I am an experienced public speaker and that, should you interested in the content of my talk, you can be assured that my presentation of it will be clear, engaging and effective.</p> 
+		
+		<div id="videoWrapper" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+			<img id="video-thumbnail" src="img/videoThumbnail.png" style="cursor:pointer" />
+		</div>
+		<div style="display:none">
+			<!-- Embed code here -->
+			<iframe width="560" height="315" src="//www.youtube.com/embed/rBIcgyjWjkI?rel=0&autoplay=0&start=2" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+</body>
+</html>

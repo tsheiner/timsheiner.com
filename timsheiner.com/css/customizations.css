@@ -1,0 +1,581 @@
+/* Overrides for bootstrap defaults */
+
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+
+body > .navbar,
+#me footer,
+#portfolio footer {
+	font-size: 13px;
+background: rgb(69,72,77); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
+
+}
+
+.navbar {
+	min-height: 0;
+}
+
+.navbar-fixed-top {
+	margin-bottom: 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	padding: 10px 15px;
+}
+
+/* Body and structure
+-------------------------------------------------- */
+
+body#me,
+body#portfolio,
+body.blog {
+  position: relative;
+  background-repeat: repeat;
+  font-family: "museo-slab","Georgia",serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+body {
+  padding-top: 40px;
+}
+
+.navbar,
+footer {
+	text-shadow: none;
+}
+
+
+ul li {
+  margin-bottom: 5px;
+}
+
+
+p.lead {
+	font-weight: 500;
+}
+
+#me h1,
+#me h2, 
+#portfolio h1, 
+#portfolio h2,
+.blog h1,
+.blog h2
+ {
+	font-family: 'Source Sans Pro', "Verdana", sans-serif;
+}
+
+.flex {
+	display: flex;
+}
+
+.h-centered {
+	justify-content: center;
+}
+
+.v-centered {
+	align-items: center;
+}
+
+@media (max-width: 797px) {
+	.flex {
+	display: block;
+	}
+}
+
+#me header h1,
+#portfolio header h1 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: -0.018em;
+	word-spacing: 0.017em;
+	line-height: 1.3;
+	margin-bottom: 0.5em;
+}
+
+.testimonial {
+	font-weight: 400;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 2em;
+}
+
+.attribution {
+	font-style: italic;
+}
+
+section {
+	padding-top: 0.5em;
+}
+
+.section-header {
+	margin: 20px 0 10px;
+}
+
+#portfolio .section-header {
+	border-top: 2px solid #111;
+}
+
+#me .section-header {
+	border-color: #33291B;
+}
+
+#me section h1,
+#portfolio section h1  {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0em;
+	word-spacing: 0em;
+	line-height: 1.4;
+	margin-top: 0px;
+}
+
+.typekit-badge {
+	display: none !important;
+}
+
+/* Page Specific
+-------------------------------------------------- */
+
+#portfolio {
+	background: #3a3a3a;
+	background-image: url("../img/low_contrast_linen.png");
+	color: #888;
+	text-shadow: 1px 1px 0px #222;
+}
+
+#me {
+	background: #816c23;
+	background-image: url("../img/floral_transparent.png");
+	color: #7D442B;
+	text-shadow: 1px 1px 0px #B7BA7A;
+}
+
+#me footer {
+	color: #666;
+}
+
+#portfolio h1 {
+	color:#111;
+	text-shadow: 1px 1px 1px #666;
+}
+
+#me h1 {
+	color:#33291B;
+	text-shadow: 1px 1px 1px #C5BD7D;
+}
+
+#portfolio img {
+	width:90%;
+	margin: 0 auto;
+	display: block;
+}
+
+#me header img {
+	margin: 30px auto;
+}
+
+#me img {
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px 1px rgba(38,30,20,0.8);
+	margin-bottom: 30px
+}
+
+#me .text-caption {
+	font-size: 0.8em;
+}
+
+
+/* Sections
+-------------------------------------------------- */
+
+
+section .screenshot {
+	box-shadow: 6px 6px 9px #222;
+	border-radius: 0 !important;
+}
+
+.section-body {
+	position: relative;
+	padding-top: 50px;
+	margin-top: 0.3em;
+}
+
+.section-body {
+	background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 48%, rgba(125,126,125,0) 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(48%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); /* W3C */
+}
+
+.section-body.short {
+	background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 35%, rgba(125,126,125,0) 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(35%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 35%,rgba(125,126,125,0) 40%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 35%,rgba(125,126,125,0) 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 35%,rgba(125,126,125,0) 50%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 35%,rgba(125,126,125,0) 50%); /* W3C */
+}
+
+
+.section-body [class*="span"] {
+	padding:10px;
+}
+
+.logo {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	left:10px;
+}	
+
+
+/* section specific 
+--------------------------- */
+
+#predix .logo {
+	background-image: url("../img/logo_ge.png");
+	height: 41px;
+	width: 219px;
+	top:10px;
+}
+
+#visualSystem .logo,
+#softwareFramework .logo {
+	background-image: url("../img/logo_jaspersoft.png");
+	height: 25px;
+	width: 130px;
+	top:10px;
+	
+}
+
+#serviceModel .logo {
+	background-image: url("../img/logo_schwab.png");
+	height: 25px;
+	width: 160px;
+	top:10px;
+	left:10px;	
+}
+
+#publicInterest .logo {
+	background-image: url("../img/logo_sfrecpark.png");
+	height: 100px;
+	width: 63px;
+	top:10px;	
+}
+
+
+#publicInterest #stewardship {
+	position: relative;
+	margin-left: 100px;
+	margin-top: -30px;
+}
+
+#publicInterest #whp {
+	position: relative;
+	margin-top: 50px;
+}
+
+#colophon {
+	font-size: smaller;
+}
+
+section#colophon h1 {
+	border-top: 1px solid #7D442B;;
+	font-size: 20px;
+}
+
+section#colophon p, section#colophon li {
+	margin-bottom: 2px;
+}
+
+section#bridge {
+	padding-top:2em;
+}
+
+#cca img#video-thumbnail {
+	height: 315px;
+	width: 560px;
+	cursor: pointer;
+}
+
+#containingBlock {
+  width:50%;
+}
+
+#videoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoWrapper iframe {
+ 
+}
+
+
+/* Footer
+-------------------------------------------------- */
+
+#me .footer,
+#portfolio .footer {
+  margin-top: 70px;
+  padding: 10px 0;
+}
+#me .footer p,
+#portfolio .footer p {
+  margin-bottom: 0;
+}
+.footer-links,
+.contactInfo {
+  margin: 0 0 5px 0;;
+}
+.footer-links li,
+.contactInfo li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer a:active,
+.contactInfo a:active {
+	/* color: white; */
+}
+
+footer a:hover,
+.contactInfo a:hover {
+	color: #08C;
+	text-decoration: underline;
+}
+
+footer a,
+.contactInfo a {
+	text-decoration: none;
+	float: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+header .contactInfo {
+	margin-top: 25px;
+	/* margin-bottom: -40px; */
+	font-size: .8em;
+}
+
+
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+  .bs-docs-container {
+    max-width: 970px;
+  }
+  .bs-docs-sidenav {
+    width: 258px;
+  }
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Inline-block quick links for more spacing */
+  .quick-links li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  /* When affixed, space properly */
+  .bs-docs-sidenav {
+    top: 0;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+  /* Adjust sidenav width */
+  .bs-docs-sidenav {
+    width: 166px;
+    margin-top: 20px;
+  }
+  .bs-docs-sidenav.affix {
+    top: 0;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    padding: 40px 20px;
+    margin-top:   -20px; /* Offset bottom margin on .navbar */
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+  .masthead h1 {
+    font-size: 90px;
+  }
+  .masthead p,
+  .masthead .btn {
+    font-size: 24px;
+  }
+  .marketing .span4 {
+    margin-bottom: 40px;
+  }
+  .bs-docs-social {
+    margin: 0 -20px;
+  }
+
+  /* Space out the show-grid examples */
+  .show-grid [class*="span"] {
+    margin-bottom: 5px;
+  }
+
+  /* Sidenav */
+  .bs-docs-sidenav {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .bs-docs-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+
+  /* Unfloat the back to top link in footer */
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 60px;
+  }
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 20px;
+  }
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+
+  /* Marketing on home */
+  .marketing h1 {
+    font-size: 40px;
+  }
+
+  /* center example sites */
+  .example-sites {
+    margin-left: 0;
+  }
+  .example-sites > li {
+    float: none;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  .example-sites .thumbnail > img {
+    max-width: 270px;
+  }
+
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  /* Unfloat the back to top in footer to prevent odd text wrapping */
+  .footer .pull-right {
+    float: none;
+  }
+}
+
+/* Utility
+------------------------- */
+
+.newLines {
+	display: block;
+}
