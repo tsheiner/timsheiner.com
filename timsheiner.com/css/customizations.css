@@ -8,11 +8,7 @@ body > .navbar,
 #me footer,
 #portfolio footer {
 	font-size: 16px;
-background: #222;
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-
-
-
+	background: #222;
 }
 
 .navbar {
@@ -77,7 +73,6 @@ a:hover{
 #me h1,
 #me h2, 
 #portfolio h1, 
-/*#portfolio h2,*/
 .blog h1,
 .blog h2
  {
@@ -121,8 +116,8 @@ a:hover{
 }
 
 .testimonial {
-  font-family: "museo-slab","Georgia",serif;
-  color:#9e4700;/*#00a99d;*/
+	font-family: "museo-slab","Georgia",serif;
+	color:#9e4700;
 	font-weight: 300;
 	font-size: 21px;
 	line-height: 1.5em;
@@ -172,16 +167,13 @@ section {
 
 #portfolio {
 	background: #3a3a3a;
-	/*background-image: url("../img/low_contrast_linen.png");*/
 	color: #888;
-	/*text-shadow: 1px 1px 0px #222;*/
 }
 
 #me {
 	background: #816c23;
 	background-image: url("../img/floral_transparent.png");
 	color: #7D442B;
-	/*text-shadow: 1px 1px 0px #B7BA7A;*/
 }
 
 #me footer {
@@ -189,18 +181,15 @@ section {
 }
 
 #portfolio h1 {
-	color:#888;/*#111;*/
-	/*text-shadow: 1px 1px 1px #666;*/
+	color:#888;
 }
 
 #me h1 {
 	color:#33291B;
-	/*text-shadow: 1px 1px 1px #C5BD7D;*/
 }
 
 #portfolio img {
 	width:100%;
-	/*margin: 0 auto;*/
 	display: block;
 }
 
@@ -230,8 +219,8 @@ section {
 section .screenshot {
 	/*box-shadow: 6px 6px 9px #222;*/
 	border-radius: 0 !important;
-  margin-top:20px;
-  margin-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 .section-body {
@@ -268,8 +257,6 @@ section .screenshot {
 	position: absolute;
 	background-repeat: no-repeat;
 	background-size: contain;
-
-	/*left:10px;*/
 }	
 
 
@@ -397,14 +384,12 @@ footer a,
 .contactInfo a {
 	text-decoration: none;
 	float: none;
-	/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
 }
 
 header .contactInfo {
 	margin-top: 25px;
-	/* margin-bottom: -40px; */
 	font-size: .8em;
-  font-weight:400;
+	font-weight:400;
 }
 
 
