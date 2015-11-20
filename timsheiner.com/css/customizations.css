@@ -58,7 +58,7 @@ p{
 
 p.lead {
 	font-weight: 300;
-  margin-bottom:40px;
+/*   margin-bottom:40px; */
 }
 
 a {
@@ -217,7 +217,7 @@ section {
 
 
 section .screenshot {
-	/*box-shadow: 6px 6px 9px #222;*/
+	box-shadow: 6px 6px 9px #222;
 	border-radius: 0 !important;
 	margin-top:20px;
 	margin-bottom:20px;
@@ -229,32 +229,12 @@ section .screenshot {
 	margin-top: 0.3em;
 }
 
-.section-body {
-
-	/*background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 48%, rgba(125,126,125,0) 50%); 
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(48%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); 
-	background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); */
-}
-
-.section-body.short {
-	/*background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 48%, rgba(125,126,125,0) 50%); 
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(48%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); 
-  background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); */
-}
-
-
 .section-body [class*="span"] {
 	padding:10px;
 }
 
 .logo {
-	position: absolute;
+/* 	position: absolute; */
 	background-repeat: no-repeat;
 	background-size: contain;
 }	
@@ -262,37 +242,61 @@ section .screenshot {
 
 /* section specific 
 --------------------------- */
+#jut .logo {
+	background-image: url("../img/logo_jut.png");
+	height: 35px;
+	width: 120px;
+}
+
 
 #predix .logo {
 	background-image: url("../img/logo_ge.png");
 	height: 41px;
 	width: 219px;
-	top:10px;
+/* 	top:10px; */
 
 }
 
-#visualSystem .logo,
-#softwareFramework .logo {
+#technicalApplication .logo {
+	background-image: url("../img/logo_akamai.png");
+	height: 55px;
+	width: 120px;
+}
+
+
+#visualSystem .logo {
 	background-image: url("../img/logo_jaspersoft.png");
 	height: 25px;
 	width: 130px;
-	top:10px;
-	
+/* 	top:10px; */	
 }
+
+#cca .logo {
+	background-image: url("../img/logo_cca.png");
+	height: 26px;
+	width: 70px;
+/*
+	top:10px;
+	left:10px;	
+*/
+}
+
 
 #serviceModel .logo {
 	background-image: url("../img/logo_schwab.png");
 	height: 25px;
 	width: 160px;
+/*
 	top:10px;
 	left:10px;	
+*/
 }
 
 #publicInterest .logo {
 	background-image: url("../img/logo_sfrecpark.png");
 	height: 100px;
 	width: 63px;
-	top:10px;	
+/* 	top:10px; */	
 }
 
 
