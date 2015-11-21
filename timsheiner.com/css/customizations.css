@@ -51,13 +51,8 @@ ul li {
   margin-bottom: 5px;
 }
 
-p{
-  /*font-size:24px;*/
-}
-
 p.lead {
 	font-weight: 300;
-/*   margin-bottom:40px; */
 }
 
 a {
@@ -128,13 +123,12 @@ a:hover{
 }
 
 section {
-/* 	padding-top: 0.5em; */
-	margin-top:5em;
+	margin-top:4em;
 }
 
 .section-header {
 	margin: 20px 0 10px;
-  padding-top:10px;
+	padding-top:10px;
 }
 
 #portfolio .section-header {
@@ -180,6 +174,14 @@ section {
 	color: #666;
 }
 
+#me section {
+	margin-top:1em;
+}
+
+#me .lead {
+	margin-top:1em;
+}
+
 #portfolio h1 {
 	color:#888;
 }
@@ -196,10 +198,8 @@ section {
 #portfolio p.text-caption-above {
   margin-bottom: 0px;
   margin-top: 15px;
-  /* color: #666; */
-/* font-style: italic; */
-font-weight: 400;
-font-size: 0.9em
+  font-weight: 400;
+  font-size: 0.9em
 }
 
 #me header img {
@@ -214,6 +214,7 @@ font-size: 0.9em
 
 #me .text-caption {
 	font-size: 0.8em;
+	line-height: 1.2em;
 }
 
 
@@ -230,16 +231,11 @@ section .screenshot {
 
 .section-body {
 	position: relative;
-/* 	padding-top: 50px; */
 	margin-top: 2em;
 }
 
-.section-body [class*="span"] {
-/* 	padding:10px; */
-}
 
 .logo {
-/* 	position: absolute; */
 	background-repeat: no-repeat;
 	background-size: contain;
 }	
@@ -247,6 +243,10 @@ section .screenshot {
 
 /* section specific 
 --------------------------- */
+section#complexProblem {
+	margin-top:1em;
+}
+
 #jut .logo {
 	background-image: url("../img/logo_jut.png");
 	height: 29px;
@@ -272,8 +272,7 @@ section .screenshot {
 #visualSystem .logo {
 	background-image: url("../img/logo_jaspersoft.png");
 	height: 25px;
-	width: 130px;
-/* 	top:10px; */	
+	width: 130px;	
 }
 
 #ecommerce .logo {
@@ -293,10 +292,6 @@ section .screenshot {
 	background-image: url("../img/logo_cca.png");
 	height: 26px;
 	width: 70px;
-/*
-	top:10px;
-	left:10px;	
-*/
 }
 
 
@@ -304,17 +299,12 @@ section .screenshot {
 	background-image: url("../img/logo_schwab.png");
 	height: 25px;
 	width: 160px;
-/*
-	top:10px;
-	left:10px;	
-*/
 }
 
 #publicInterest .logo {
 	background-image: url("../img/logo_sfrecpark.png");
 	height: 100px;
-	width: 63px;
-/* 	top:10px; */	
+	width: 63px;	
 }
 
 
@@ -393,7 +383,6 @@ section#bridge {
 
 footer a:active,
 .contactInfo a:active {
-	/* color: white; */
 }
 
 footer a:hover,
