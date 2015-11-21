@@ -31,7 +31,6 @@ body#portfolio,
 body.blog {
   position: relative;
   background-repeat: repeat;
-  /*font-family: "museo-slab","Georgia",serif;*/
   font-family: 'Source Sans Pro', "Verdana", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -39,7 +38,7 @@ body.blog {
 }
 
 body {
-  padding-top: 40px;
+/*   padding-top: 40px; */
 }
 
 .navbar,
@@ -52,13 +51,8 @@ ul li {
   margin-bottom: 5px;
 }
 
-p{
-  /*font-size:24px;*/
-}
-
 p.lead {
 	font-weight: 300;
-  margin-bottom:40px;
 }
 
 a {
@@ -129,12 +123,12 @@ a:hover{
 }
 
 section {
-	padding-top: 0.5em;
+	margin-top:4em;
 }
 
 .section-header {
 	margin: 20px 0 10px;
-  padding-top:10px;
+	padding-top:10px;
 }
 
 #portfolio .section-header {
@@ -180,6 +174,14 @@ section {
 	color: #666;
 }
 
+#me section {
+	margin-top:1em;
+}
+
+#me .lead {
+	margin-top:1em;
+}
+
 #portfolio h1 {
 	color:#888;
 }
@@ -193,8 +195,11 @@ section {
 	display: block;
 }
 
-#portfolio .text-caption-above {
-  margin-bottom: 10px;
+#portfolio p.text-caption-above {
+  margin-bottom: 0px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 0.9em
 }
 
 #me header img {
@@ -209,6 +214,7 @@ section {
 
 #me .text-caption {
 	font-size: 0.8em;
+	line-height: 1.2em;
 }
 
 
@@ -217,44 +223,19 @@ section {
 
 
 section .screenshot {
-	/*box-shadow: 6px 6px 9px #222;*/
+/* 	box-shadow: 6px 6px 9px #222; */
 	border-radius: 0 !important;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:5px;
+	margin-bottom:50px;
 }
 
 .section-body {
 	position: relative;
-	padding-top: 50px;
-	margin-top: 0.3em;
+	margin-top: 2em;
 }
 
-.section-body {
-
-	/*background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 48%, rgba(125,126,125,0) 50%); 
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(48%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); 
-	background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-	background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); */
-}
-
-.section-body.short {
-	/*background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 0%, rgba(125,126,125,0.04) 48%, rgba(125,126,125,0) 50%); 
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,1)), color-stop(48%,rgba(125,126,125,0.04)), color-stop(50%,rgba(125,126,125,0))); 
-  background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); 
-  background: linear-gradient(135deg,  rgba(14,14,14,1) 0%,rgba(125,126,125,0.04) 48%,rgba(125,126,125,0) 50%); */
-}
-
-
-.section-body [class*="span"] {
-	padding:10px;
-}
 
 .logo {
-	position: absolute;
 	background-repeat: no-repeat;
 	background-size: contain;
 }	
@@ -262,37 +243,68 @@ section .screenshot {
 
 /* section specific 
 --------------------------- */
+section#complexProblem {
+	margin-top:1em;
+}
+
+#jut .logo {
+	background-image: url("../img/logo_jut.png");
+	height: 29px;
+	width: 110px;
+}
+
 
 #predix .logo {
 	background-image: url("../img/logo_ge.png");
 	height: 41px;
 	width: 219px;
-	top:10px;
+/* 	top:10px; */
 
 }
 
-#visualSystem .logo,
-#softwareFramework .logo {
+#technicalApplication .logo {
+	background-image: url("../img/logo_akamai.png");
+	height: 55px;
+	width: 120px;
+}
+
+
+#visualSystem .logo {
 	background-image: url("../img/logo_jaspersoft.png");
 	height: 25px;
-	width: 130px;
-	top:10px;
-	
+	width: 130px;	
 }
+
+#ecommerce .logo {
+	background-image: url("../img/logo_apple.png");
+	height: 98px;
+	width: 80px;	
+}
+
+#mobileApplication .logo {
+	background-image: url("../img/logo_pearson.png");
+	height: 43px;
+	width: 110px;	
+}
+
+
+#cca .logo {
+	background-image: url("../img/logo_cca.png");
+	height: 26px;
+	width: 70px;
+}
+
 
 #serviceModel .logo {
 	background-image: url("../img/logo_schwab.png");
 	height: 25px;
 	width: 160px;
-	top:10px;
-	left:10px;	
 }
 
 #publicInterest .logo {
 	background-image: url("../img/logo_sfrecpark.png");
 	height: 100px;
-	width: 63px;
-	top:10px;	
+	width: 63px;	
 }
 
 
@@ -371,7 +383,6 @@ section#bridge {
 
 footer a:active,
 .contactInfo a:active {
-	/* color: white; */
 }
 
 footer a:hover,
@@ -406,7 +417,11 @@ header .contactInfo {
   .bs-docs-sidenav {
     width: 258px;
   }
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .span12 {
+	    width: 980px;
+	}
 }
+
 
 /* Desktop
 ------------------------- */
