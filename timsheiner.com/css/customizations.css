@@ -15,8 +15,9 @@ body > .navbar,
 	min-height: 0;
 }
 
-.navbar-fixed-top {
+.navbar-static-top {
 	margin-bottom: 20px;
+	width:auto;
 }
 
 .navbar-inverse .navbar-nav>li>a {
