@@ -143,14 +143,26 @@ section {
 #me section h1,
 #portfolio section h1  {
 	font-style: normal;
-	font-weight: 300;
-	font-size: 36px;
+	font-weight: 500;
+	font-size: 21px;
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: 0em;
 	word-spacing: 0em;
 	line-height: 1.4;
-	margin-top: 0px;
+	margin-top: 10px;
+	margin-bottom:0;
+}
+
+.responsibilities {
+	margin:0 0 20px 20px;
+}
+
+.responsibilities li {
+	font-size: 16px;
+    margin-bottom: 0;
+    line-height: 22px;
+    color: #777;
 }
 
 .typekit-badge {
@@ -162,7 +174,7 @@ section {
 
 #portfolio {
 	background: #3a3a3a;
-	color: #888;
+	color: #aaa;
 }
 
 #me {
@@ -184,7 +196,7 @@ section {
 }
 
 #portfolio h1 {
-	color:#888;
+/* 	color:#888; */
 }
 
 #me h1 {
@@ -197,7 +209,7 @@ section {
 }
 
 #portfolio p.text-caption-above {
-  margin-bottom: 0px;
+/*   margin-bottom: 15px; */
   margin-top: 15px;
   font-weight: 400;
   font-size: 0.9em
@@ -233,6 +245,7 @@ section .screenshot {
 .section-body {
 	position: relative;
 	margin-top: 2em;
+/* 	margin-left: 10px; */
 }
 
 
