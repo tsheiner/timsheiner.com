@@ -106,7 +106,6 @@ h1 {
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: -0.018em;
-/* 	word-spacing: 0.017em; */
 	line-height: 1.1;
 	margin: 1.2em 0 0.3em 0;
 }
@@ -226,13 +225,6 @@ section {
 	display: block;
 }
 
-#portfolio p.text-caption-above {
-/*   margin-bottom: 15px; 
-  margin-top: 15px;
-  font-weight: 400;
-  font-size: 0.9em*/
-}
-
 #me header img {
 	margin: 30px auto;
 }
@@ -279,65 +271,55 @@ section {
 #jut .logo {
 	background-image: url("../img/logo_jut.png");
 	height: 35px;
-/* 	width: 110px; */
 }
 
 #qpharmetra .logo {
 	background-image: url("../img/logo_qpharmetra.png");
 	height: 35px;
-/* 	width: 110px; */
 }
 
 
 #predix .logo {
 	background-image: url("../img/logo_ge.png");
 	height: 47px;
-/* 	width: 219px; */
 }
 
 #technicalApplication .logo {
 	background-image: url("../img/logo_akamai.png");
 	height: 61px;
-/* 	width: 120px; */
 }
 
 
 #visualSystem .logo {
 	background-image: url("../img/logo_jaspersoft.png");
-	height: 31px;
-/* 	width: 130px; */	
+	height: 31px;	
 }
 
 #ecommerce .logo {
 	background-image: url("../img/logo_apple.png");
-	height: 106px;
-/* 	width: 80px; */	
+	height: 106px;	
 }
 
 #mobileApplication .logo {
 	background-image: url("../img/logo_pearson.png");
-	height: 48px;
-/* 	width: 110px; */	
+	height: 48px;	
 }
 
 
 #cca .logo {
 	background-image: url("../img/logo_cca.png");
 	height: 31px;
-/* 	width: 70px; */
 }
 
 
 #serviceModel .logo {
 	background-image: url("../img/logo_schwab.png");
 	height: 32px;
-/* 	width: 160px; */
 }
 
 #publicInterest .logo {
 	background-image: url("../img/logo_sfrecpark.png");
 	height: 106px;
-/* 	width: 63px; */	
 }
 
 
@@ -504,24 +486,13 @@ header .contactInfo {
 
 /* Tablet
 ------------------------- */
-@media (max-width: 797px) {
-/*
-	.flex {
-	display: block;
-	}
-*/
-}
-
 @media (max-width: 767px) {
   /* Remove any padding from the body */
   body {
     padding-top: 0;
   }
   
-  .flex {
-/* 	display: block; */
-	}
-	.flex-item {
+.flex-item {
 		flex-basis: 49%;
 	}
 	
