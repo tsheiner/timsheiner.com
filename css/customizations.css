@@ -90,13 +90,14 @@ a:hover{
 }
 
 #portfolio .intro-text {
-  margin-top:40px;
+/*   margin-top:40px; */
   margin-bottom:20px;
 }
 
 .intro-text h1 {
 	  font-size: 350%;
-	  line-height: 1.2em
+	  line-height: 1.2em;
+	  margin-top: 0.25em;
 }
 
 h1 {
