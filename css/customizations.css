@@ -27,19 +27,13 @@ body > .navbar,
 /* Body and structure
 -------------------------------------------------- */
 
-body#me,
-body#portfolio,
-body.blog {
+
+body {
   position: relative;
   background-repeat: repeat;
   font-family: 'Source Sans Pro', "Verdana", sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 1.5em;
-}
-
-body {
-/*   padding-top: 40px; */
+  font-size: 110%;
 }
 
 .navbar,
@@ -52,8 +46,11 @@ ul li {
   margin-bottom: 5px;
 }
 
+p,
 p.lead {
 	font-weight: 300;
+	font-size:140%;
+	line-height: 1.3em;
 }
 
 a {
@@ -76,6 +73,12 @@ a:hover{
 
 .flex {
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-item {
+	flex: 0 1 50%;
 }
 
 .h-centered {
@@ -86,72 +89,85 @@ a:hover{
 	align-items: center;
 }
 
-@media (max-width: 797px) {
-	.flex {
-	display: block;
-	}
-}
-
 #portfolio .intro-text {
   margin-top:40px;
   margin-bottom:20px;
 }
 
-#me header h1,
-#portfolio header h1 {
+.intro-text h1 {
+	  font-size: 350%;
+	  line-height: 1.2em
+}
+
+h1 {
 	font-style: normal;
-	font-weight: 300;
-	font-size: 64px;
+	font-weight: 500;
+	font-size: 220%;
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: -0.018em;
-	word-spacing: 0.017em;
+/* 	word-spacing: 0.017em; */
+	line-height: 1.1;
+	margin: 1.2em 0 0.3em 0;
+}
+
+
+h2 {
+	font-style: normal;
+    font-weight: 500;
+    font-size: 80%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.018em;
+    word-spacing: normal;
+    line-height: 0.5;
+    margin-bottom: 1em;
+    opacity: .5;
+}
+
+
+header h2 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.018em;
+	word-spacing: 	normal;
 	line-height: 1.3;
 	margin-bottom: 0.5em;
 }
 
 .testimonial {
 	font-family: "museo-slab","Georgia",serif;
-	color:#9e4700;
+	color:#E87313;
 	font-weight: 300;
-	font-size: 21px;
-	line-height: 1.5em;
+	font-size: 140%;
+	line-height: 1.2em;
 	margin-top: 2em;
+	text-transform: none;
 }
 
 .attribution {
 	font-style: italic;
+	font-size: 110%;
+	line-height: 1.1em;
 }
+
+.annotation {
+	font-size: 100%;
+	line-height: normal;
+	margin-top:1em;
+	opacity: 0.6;
+}
+
 
 section {
-	margin-top:4em;
-}
-
-.section-header {
-	margin: 20px 0 10px;
-	padding-top:10px;
-}
-
-#portfolio .section-header {
-	border-top: 2px solid #4c4c4c;
+	margin:1em 0 4em 0;
 }
 
 #me .section-header {
 	border-color: #33291B;
-}
-
-#me section h1,
-#portfolio section h1  {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 21px;
-	text-transform: none;
-	text-decoration: none;
-	letter-spacing: 0em;
-	word-spacing: 0em;
-	line-height: 1.4;
-	margin-top: 10px;
-	margin-bottom:0;
 }
 
 .responsibilities {
@@ -159,10 +175,10 @@ section {
 }
 
 .responsibilities li {
-	font-size: 16px;
+	font-size: 100%;
     margin-bottom: 0;
     line-height: 22px;
-    color: #777;
+    opacity: 0.6;
 }
 
 .typekit-badge {
@@ -204,15 +220,17 @@ section {
 }
 
 #portfolio img {
-	width:100%;
+	width: 97%;
+	display: block;
+	margin:30px auto 50px;
 	display: block;
 }
 
 #portfolio p.text-caption-above {
-/*   margin-bottom: 15px; */
+/*   margin-bottom: 15px; 
   margin-top: 15px;
   font-weight: 400;
-  font-size: 0.9em
+  font-size: 0.9em*/
 }
 
 #me header img {
@@ -235,8 +253,8 @@ section {
 -------------------------------------------------- */
 
 
-section .screenshot {
-/* 	box-shadow: 6px 6px 9px #222; */
+.screenshot {
+	box-shadow: 6px 6px 9px #222;
 	border-radius: 0 !important;
 	margin-top:5px;
 	margin-bottom:50px;
@@ -252,73 +270,74 @@ section .screenshot {
 .logo {
 	background-repeat: no-repeat;
 	background-size: contain;
+	width: auto;
 }	
 
 
 /* section specific 
 --------------------------- */
-section#complexProblem {
-	margin-top:1em;
-}
-
 #jut .logo {
 	background-image: url("../img/logo_jut.png");
-	height: 29px;
-	width: 110px;
+	height: 35px;
+/* 	width: 110px; */
+}
+
+#qpharmetra .logo {
+	background-image: url("../img/logo_qpharmetra.png");
+	height: 35px;
+/* 	width: 110px; */
 }
 
 
 #predix .logo {
 	background-image: url("../img/logo_ge.png");
-	height: 41px;
-	width: 219px;
-/* 	top:10px; */
-
+	height: 47px;
+/* 	width: 219px; */
 }
 
 #technicalApplication .logo {
 	background-image: url("../img/logo_akamai.png");
-	height: 55px;
-	width: 120px;
+	height: 61px;
+/* 	width: 120px; */
 }
 
 
 #visualSystem .logo {
 	background-image: url("../img/logo_jaspersoft.png");
-	height: 25px;
-	width: 130px;	
+	height: 31px;
+/* 	width: 130px; */	
 }
 
 #ecommerce .logo {
 	background-image: url("../img/logo_apple.png");
-	height: 98px;
-	width: 80px;	
+	height: 106px;
+/* 	width: 80px; */	
 }
 
 #mobileApplication .logo {
 	background-image: url("../img/logo_pearson.png");
-	height: 43px;
-	width: 110px;	
+	height: 48px;
+/* 	width: 110px; */	
 }
 
 
 #cca .logo {
 	background-image: url("../img/logo_cca.png");
-	height: 26px;
-	width: 70px;
+	height: 31px;
+/* 	width: 70px; */
 }
 
 
 #serviceModel .logo {
 	background-image: url("../img/logo_schwab.png");
-	height: 25px;
-	width: 160px;
+	height: 32px;
+/* 	width: 160px; */
 }
 
 #publicInterest .logo {
 	background-image: url("../img/logo_sfrecpark.png");
-	height: 100px;
-	width: 63px;	
+	height: 106px;
+/* 	width: 63px; */	
 }
 
 
@@ -485,11 +504,23 @@ header .contactInfo {
 
 /* Tablet
 ------------------------- */
+@media (max-width: 797px) {
+/*
+	.flex {
+	display: block;
+	}
+*/
+}
+
 @media (max-width: 767px) {
   /* Remove any padding from the body */
   body {
     padding-top: 0;
   }
+  
+  .flex {
+	display: block;
+	}
 
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
@@ -546,6 +577,7 @@ header .contactInfo {
   /* Remove padding above jumbotron */
   body {
     padding-top: 0;
+    font-size:85%;
   }
 
   /* Change up some type stuff */
