@@ -78,7 +78,7 @@ a:hover{
 }
 
 .flex-item {
-	flex: 0 1 50%;
+	flex: 0 1 24%;
 }
 
 .h-centered {
@@ -142,7 +142,7 @@ header h2 {
 	font-family: "museo-slab","Georgia",serif;
 	color:#E87313;
 	font-weight: 300;
-	font-size: 140%;
+	font-size: 110%;
 	line-height: 1.2em;
 	margin-top: 2em;
 	text-transform: none;
@@ -519,8 +519,15 @@ header .contactInfo {
   }
   
   .flex {
-	display: block;
+/* 	display: block; */
 	}
+	.flex-item {
+		flex-basis: 49%;
+	}
+	
+	#portfolio img {
+    margin: 10px auto 20px;
+}	
 
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
