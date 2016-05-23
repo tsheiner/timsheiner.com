@@ -71,15 +71,49 @@ a:hover{
 	font-family: 'Source Sans Pro', "Verdana", sans-serif;
 }
 
+#portfolio img {
+	width: 97%;
+	display: block;
+	margin:30px auto 50px;
+	display: block;
+}
+
+
 .flex {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
 
-.flex-item {
-	flex: 0 1 24%;
+.image-container {
+	margin-top:5px;
+	margin-bottom:50px;
+	justify-content: flex-start;
 }
+
+.image-container .screenshot,
+#portfolio .image-container img   {
+	margin:5px;
+}
+
+
+.flex-item {
+	flex: 0 1 auto;
+}
+
+.quarter {
+	flex-basis: 25%;
+}
+
+.third {
+	flex-basis: 33%;
+}
+
+
+.half {
+	flex-basis: 50%;
+}
+
 
 .h-centered {
 	justify-content: center;
@@ -217,13 +251,6 @@ section {
 
 #me h1 {
 	color:#33291B;
-}
-
-#portfolio img {
-	width: 97%;
-	display: block;
-	margin:30px auto 50px;
-	display: block;
 }
 
 #me header img {
