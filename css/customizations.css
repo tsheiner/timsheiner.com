@@ -85,6 +85,10 @@ a:hover{
 	justify-content: space-around;
 }
 
+.flex-container {
+	justify-content: space-between;
+}
+
 .image-container {
 	margin-top:5px;
 	margin-bottom:50px;
@@ -101,17 +105,34 @@ a:hover{
 	flex: 0 1 auto;
 }
 
+.main {
+	flex-shrink: 1;
+	height: fit-content;
+}
+
+.flex-item.cta {
+	display:none;
+}
+
 .quarter {
-	flex-basis: 25%;
+	flex-basis: 24%;
 }
 
 .third {
-	flex-basis: 33%;
+	flex-basis: 32%;
 }
 
 
 .half {
-	flex-basis: 50%;
+	flex-basis: 49%;
+}
+
+.twothird {
+	flex-basis: 66%
+}
+
+.fullwidth {
+	flex-basis: 100%;
 }
 
 
@@ -222,7 +243,7 @@ section {
 /* Page Specific
 -------------------------------------------------- */
 
-#portfolio {
+#portfolio,#process {
 	background: #3a3a3a;
 	color: #aaa;
 }
@@ -278,6 +299,16 @@ section {
 	border-radius: 0 !important;
 	margin-top:5px;
 	margin-bottom:50px;
+}
+
+.illustration {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	background: #242424;
+	border: 2px solid #AAAAAA;
+	box-sizing: border-box;
+	border-radius: 25px;
+	padding:2px;
 }
 
 .section-body {
@@ -519,6 +550,10 @@ header .contactInfo {
 	body {
 		padding-top: 0;
 	}
+
+	.third,.twothird,.half {
+		flex-basis: 100%;
+	}
 	
 	#portfolio {
 		background-color: #2a2a2a;
@@ -586,6 +621,14 @@ header .contactInfo {
 	}		
 }
 
+/* Portrait phones
+------------------------- */
+@media (max-width: 550px) {
+	.third,.twothird,.half,.cta {
+		flex-basis: 100%;
+	}
+}
+
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
@@ -594,6 +637,23 @@ header .contactInfo {
     padding-top: 0;
     font-size:85%;
   }
+
+  .flex-item.cta {
+	display:flex;
+	flex-basis:100%;
+}
+
+.lead.cta {
+	display:none;
+}
+
+  .cta {
+	  order: 3;
+  }
+
+  .third,.twothird,.half {
+	flex-basis: 100%;
+}
 
   /* Change up some type stuff */
   h2 small {
