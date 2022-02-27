@@ -5,8 +5,7 @@
 -------------------------------------------------- */
 
 body > .navbar,
-#me footer,
-#portfolio footer {
+.footer {
 	font-size: 16px;
 	background: #222;
 }
@@ -108,10 +107,6 @@ a:hover{
 .main {
 	flex-shrink: 1;
 	height: fit-content;
-}
-
-.flex-item.cta {
-	display:none;
 }
 
 .quarter {
@@ -427,23 +422,20 @@ section#bridge {
   margin-top:20px;
 }
 
-.videoWrapper iframe {
- 
-}
-
 
 /* Footer
 -------------------------------------------------- */
 
-#me .footer,
-#portfolio .footer {
-  margin-top: 70px;
-  padding: 10px 0 40px 0;
-}
-#me .footer p,
-#portfolio .footer p {
-  margin-bottom: 0;
-}
+.footer {
+	margin-top: 70px;
+	padding: 10px 0 10px 0;
+	text-align:center;
+  }
+
+  .footer p {
+	margin-bottom: 0;
+  }
+
 .footer-links,
 .contactInfo {
   font-weight:400;
@@ -481,6 +473,10 @@ header .contactInfo {
 
 /* Responsive
 -------------------------------------------------- */
+
+.teaser.mobile {
+	display:none;
+}
 
 /* Desktop large
 ------------------------- */
@@ -564,9 +560,9 @@ header .contactInfo {
 		font-size: 130%;
 	}
 	
-	.flex-item {
+	/* .flex-item {
 		flex-basis: 49%;
-	}
+	} */
 	
 	#portfolio img {
 		margin: 10px auto 20px;
@@ -623,11 +619,11 @@ header .contactInfo {
 
 /* Portrait phones
 ------------------------- */
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
 	.third,.twothird,.half,.cta {
 		flex-basis: 100%;
 	}
-}
+} */
 
 /* Landscape phones
 ------------------------- */
@@ -638,18 +634,17 @@ header .contactInfo {
     font-size:85%;
   }
 
-  .flex-item.cta {
-	display:flex;
-	flex-basis:100%;
+  /* change visible location of teaser */
+.teaser.mobile {
+	display:block;
+	margin-top:20px;
 }
 
-.lead.cta {
+.teaser.desktop {
 	display:none;
 }
 
-  .cta {
-	  order: 3;
-  }
+/* end teaser */
 
   .third,.twothird,.half {
 	flex-basis: 100%;
