@@ -139,26 +139,44 @@ a:hover{
 }
 
 #jumbotron {
-	background-image: url(../img/me_jumbotron.png),url(../img/missionControl.jpg);
-	background-size: auto,cover;
-	background-position: 0% 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 66.65%; /* (img-height / img-width * 100) */
 	border: 4px solid #AAAAAA;
 	box-sizing: border-box;
 	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
 	border-radius: 20px;
 	position: relative;
+}
 
+#jumbotron #missionControl {
+	border-radius: 20px;
+	position: relative;
+	opacity: .4;
+}
+
+#jumbotron #me_jumbotron {
+	position: absolute;
+	height:100%;
+	bottom: 0;
+	z-index: 2;
 }
 
 #jumbotron #copy {
 	position: absolute;
 	top:0;
 	right:0;
-	width:50%
+	width:50%;
+	z-index: 3;
+}
+
+#jumbotron h1 {
+	font-size: 325%;
+	line-height: 120%;
+	font-weight: 600;
+	color:#F2F2F2;
+
+}
+
+#jumbotron h1 .newLines {
+	margin-bottom:  10%;
 
 }
 
@@ -261,7 +279,7 @@ section {
 /* Page Specific
 -------------------------------------------------- */
 
-#portfolio,#process {
+#home,#portfolio,#process {
 	background: #3a3a3a;
 	color: #aaa;
 }
