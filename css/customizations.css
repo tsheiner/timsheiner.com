@@ -23,7 +23,7 @@ body > .navbar,
 	padding: 10px 15px;
 }
 
-/* Body and structure
+/* Basic Layout
 -------------------------------------------------- */
 
 
@@ -45,12 +45,21 @@ ul li {
   margin-bottom: 5px;
 }
 
-p,
-p.lead {
-	font-weight: 300;
-	font-size:140%;
-	line-height: 1.3em;
+.image-container {
+	margin-top:5px;
+	margin-bottom:50px;
+	justify-content: flex-start;
 }
+
+.image-container .screenshot,
+#portfolio .image-container img   {
+	margin:5px;
+}
+
+/* Baseline Typography
+-------------------------------------------------- */
+
+/* p, */
 
 a {
   color: #0099e5;
@@ -63,132 +72,18 @@ a:hover{
 
 #me h1,
 #me h2, 
-#portfolio h1, 
-.blog h1,
-.blog h2
- {
+#portfolio h1 {
 	font-family: 'Source Sans Pro', "Verdana", sans-serif;
 }
 
-#portfolio img {
-	width: 97%;
-	display: block;
-	margin:30px auto 50px;
-}
-
-
-.flex {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-.flex-container {
-	justify-content: space-between;
-}
-
-.image-container {
-	margin-top:5px;
-	margin-bottom:50px;
-	justify-content: flex-start;
-}
-
-.image-container .screenshot,
-#portfolio .image-container img   {
-	margin:5px;
-}
-
-
-.flex-item {
-	flex: 0 1 auto;
-}
-
-.main {
-	flex-shrink: 1;
-	height: fit-content;
-}
-
-.quarter {
-	flex-basis: 24%;
-}
-
-.third {
-	flex-basis: 32%;
-}
-
-
-.half {
-	flex-basis: 49%;
-}
-
-.twothird {
-	flex-basis: 66%
-}
-
-.fullwidth {
-	flex-basis: 100%;
-}
-
-
-.h-centered {
-	justify-content: center;
-}
-
-.v-centered {
-	align-items: center;
-}
-
-#jumbotron {
-	border: 4px solid #AAAAAA;
-	box-sizing: border-box;
-	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
-	border-radius: 20px;
-	position: relative;
-}
-
-#jumbotron #missionControl {
-	border-radius: 20px;
-	position: relative;
-	opacity: .4;
-}
-
-#jumbotron #me_jumbotron {
-	position: absolute;
-	height:100%;
-	bottom: 0;
-	z-index: 2;
-}
-
-#jumbotron #copy {
-	position: absolute;
-	top:0;
-	right:0;
-	width:50%;
-	z-index: 3;
-}
-
-#jumbotron h1 {
-	font-size: 325%;
-	line-height: 120%;
-	font-weight: 600;
-	color:#F2F2F2;
-
-}
-
-#jumbotron h1 .newLines {
-	margin-bottom:  10%;
-
-}
-
 #portfolio .intro-text {
-/*   margin-top:40px; */
-  margin-bottom:20px;
-}
-
+	  margin-bottom:20px;
+	}
+	
 .intro-text h1 {
-	  font-size: 350%;
-	  line-height: 1.2em;
-	  margin-top: 0.25em;
+		font-size: 350%;
+		line-height: 1.2em;
+		margin-top: 0.25em;
 }
 
 h1 {
@@ -197,23 +92,22 @@ h1 {
 	font-size: 220%;
 	text-transform: none;
 	text-decoration: none;
-	letter-spacing: -0.018em;
-	line-height: 1.1;
+	line-height: 1.2;
 	margin: 1.2em 0 0.3em 0;
 }
 
 
 h2 {
 	font-style: normal;
-    font-weight: 500;
-    font-size: 80%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.018em;
-    word-spacing: normal;
-    line-height: 0.5;
-    margin-bottom: 1em;
-    opacity: .5;
+	font-weight: 500;
+	font-size: 80%;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.018em;
+	word-spacing: normal;
+	line-height: 0.5;
+	margin-bottom: 1em;
+	opacity: .5;
 }
 
 
@@ -252,6 +146,171 @@ header h2 {
 	opacity: 0.6;
 }
 
+.two-up .caption {
+	font-size: 120%;
+	text-align: left;
+	margin: .5rem 0;
+	font-weight: 500;
+}
+
+/* Images
+-------------------------------------------------- */
+
+#portfolio img {
+	width: 97%;
+	display: block;
+	margin:30px auto 50px;
+}
+
+.screenshot {
+	/* box-shadow: inset 6px 6px 9px #222;
+	border-radius: 0 !important;
+	margin-bottom:50px; */
+	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    background: #e28764;
+    border: 1px solid #9cf0a7;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.two-up  .screenshot{
+	margin-bottom: 2rem;
+}
+
+.illustration {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	background: #242424;
+	border: 2px solid #AAAAAA;
+	box-sizing: border-box;
+	border-radius: 25px;
+	padding:2px;
+}
+
+
+/* Flex Layout
+-------------------------------------------------- */
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-container {
+	justify-content: space-between;
+}
+
+.section-header .flex-container {
+	flex-flow:nowrap;
+}
+.section-header .logo {
+	margin-top:1em;
+	margin-right:2em;
+}
+
+.flex-item {
+	flex: 0 1 auto;
+	position: relative;
+}
+
+/* .flex-item .logo {
+	margin-right:2em;
+	background-size:cover;
+	width:20%;
+} */
+
+.main {
+	flex-shrink: 1;
+	height: fit-content;
+}
+
+.quarter {
+	flex-basis: 24%;
+}
+
+.threequarter {
+	flex-basis: 74%;
+}
+
+.third {
+	flex-basis: 32%;
+}
+
+
+.half {
+	flex-basis: 49%;
+}
+
+.two-up .flex-item {
+	flex-basis: 48%;
+}
+
+.twothird {
+	flex-basis: 66%
+}
+
+.flex.two-up {
+	margin: 2em .5rem;
+}
+
+.fullwidth {
+	flex-basis: 100%;
+}
+
+
+.h-centered {
+	justify-content: center;
+}
+
+.v-centered {
+	align-items: center;
+}
+
+/* Page Specific
+-------------------------------------------------- */
+
+/* Home */
+
+#jumbotron {
+	border: 4px solid #AAAAAA;
+	box-sizing: border-box;
+	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
+	border-radius: 20px;
+	position: relative;
+}
+
+#jumbotron #missionControl {
+	border-radius: 20px;
+	position: relative;
+	opacity: .4;
+}
+
+#jumbotron #me_jumbotron {
+	position: absolute;
+	height:100%;
+	bottom: 0;
+	z-index: 2;
+}
+
+#jumbotron h1 {
+	position: absolute;
+	top:0;
+	right:0;
+	width:50%;
+	z-index: 3;
+	font-size: 300%;
+	line-height: 120%;
+	font-weight: 600;
+	color:#F2F2F2;
+
+}
+
+#jumbotron h1 .newLines {
+	margin-bottom:  10%;
+
+}
 
 section {
 	margin:1em 0 4em 0;
@@ -271,13 +330,6 @@ section {
     line-height: 22px;
     opacity: 0.6;
 }
-
-.typekit-badge {
-	display: none !important;
-}
-
-/* Page Specific
--------------------------------------------------- */
 
 #home,#portfolio,#process {
 	background: #3a3a3a;
@@ -300,10 +352,6 @@ section {
 
 #me .lead {
 	margin-top:1em;
-}
-
-#portfolio h1 {
-/* 	color:#888; */
 }
 
 #me h1 {
@@ -329,24 +377,6 @@ section {
 /* Sections
 -------------------------------------------------- */
 
-
-.screenshot {
-	box-shadow: 6px 6px 9px #222;
-	border-radius: 0 !important;
-	margin-top:5px;
-	margin-bottom:50px;
-}
-
-.illustration {
-	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 20px;
-	background: #242424;
-	border: 2px solid #AAAAAA;
-	box-sizing: border-box;
-	border-radius: 25px;
-	padding:2px;
-}
-
 .section-body {
 	position: relative;
 	margin-top: 2em;
@@ -363,10 +393,16 @@ section {
 
 /* section specific 
 --------------------------- */
+/* #salesforce .logo {
+	background-image: url("../img/logo_salesforce.png");
+	height: 75px;
+} */
+
 #jut .logo {
 	background-image: url("../img/logo_jut.png");
 	height: 35px;
 }
+
 
 #qpharmetra .logo {
 	background-image: url("../img/logo_qpharmetra.png");
@@ -488,10 +524,6 @@ section#bridge {
   margin-right: 10px;
 }
 
-footer a:active,
-.contactInfo a:active {
-}
-
 footer a:hover,
 .contactInfo a:hover {
 	color: #0099e5;
@@ -578,6 +610,9 @@ header .contactInfo {
   .bs-docs-sidenav.affix {
     top: 0;
   }
+  #jumbotron h1 {
+	  font-size: 250%;
+  }
 }
 
 /* Tablet
@@ -588,22 +623,44 @@ header .contactInfo {
 		padding-top: 0;
 	}
 
-	.third,.twothird,.half {
+	.two-up {
+		/* margin-left: 0;
+		margin-right: 0; */
+	}
+
+	.third,
+	.twothird,
+	.half,
+	.two-up .flex-item  {
 		flex-basis: 100%;
 	}
 	
 	#portfolio {
 		background-color: #2a2a2a;
 	}
+
+	.flex.two-up {
+		margin: 0;
+	}
+
+	.two-up .caption {
+		/* font-size: 120%;
+		font-weight: 500;
+		margin: .5rem 1rem;
+		text-align: left; */
+		position: absolute;
+		color: rgb(20, 158, 34);
+		right: 10px;
+		bottom: 40px;
+		font-weight: 300;
+		text-shadow: 2px 2px 2px rgba(92, 175, 99, 0.5);
+		font-family:Inconsolata, sans-serif;
+	}
 	
 	.testimonial {
 		color:#ff7000;
 		font-size: 130%;
 	}
-	
-	/* .flex-item {
-		flex-basis: 49%;
-	} */
 	
 	#portfolio img {
 		margin: 10px auto 20px;
@@ -616,6 +673,16 @@ header .contactInfo {
 		margin-right: -20px;
 		margin-left:  -20px;
 	}
+
+	#jumbotron h1 {
+		font-size: 150%;
+		font-weight: 500;
+	}
+
+	h1 {
+		font-size: 150%;
+	}
+
 	.masthead h1 {
 		font-size: 90px;
 	}
@@ -658,14 +725,6 @@ header .contactInfo {
 	}		
 }
 
-/* Portrait phones
-------------------------- */
-/* @media (max-width: 550px) {
-	.third,.twothird,.half,.cta {
-		flex-basis: 100%;
-	}
-} */
-
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
@@ -688,7 +747,15 @@ header .contactInfo {
 /* end teaser */
 
   .third,.twothird,.half {
-	flex-basis: 100%;
+	/* flex-basis: 100%; */
+}
+
+.two-up .flex-item {
+	margin-bottom: 2rem;;
+}
+
+.two-up .caption {
+	display: none;
 }
 
   /* Change up some type stuff */
@@ -700,6 +767,10 @@ header .contactInfo {
   .jumbotron h1 {
     font-size: 60px;
   }
+  #jumbotron h1 {
+	font-size: 200%;
+}
+
   .jumbotron p,
   .jumbotron .btn {
     font-size: 20px;
@@ -757,9 +828,30 @@ header .contactInfo {
   }
 }
 
+/* Portrait phones
+------------------------- */
+@media (max-width: 375px) {
+	body {
+		font-size:65%;
+	}
+	
+	.third,.twothird,.half,.cta {
+		flex-basis: 100%;
+	}
+
+	/* #jumbotron h1 {
+		font-size: 175%;
+		font-weight: 500;
+	} */
+}
+
 /* Utility
 ------------------------- */
 
 .newLines {
 	display: block;
+}
+
+.typekit-badge {
+	display: none !important;
 }
