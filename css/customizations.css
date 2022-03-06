@@ -152,6 +152,10 @@ header h2 {
 	opacity: 0.6;
 }
 
+.emphasis {
+	color:cornflowerblue;
+}
+
 .caption {
 	font-family: "Amiko", sans-serif;
 }
@@ -173,15 +177,24 @@ header h2 {
 }
 
 .screenshot {
-	/* box-shadow: inset 6px 6px 9px #222;
-	border-radius: 0 !important;
-	margin-bottom:50px; */
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 8px;
     background: #333;
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
-    padding: 2px;
+    padding: .1rem;
+}
+
+.one-up .screenshot {
+	padding:.5rem;
+}
+
+.one-up .bezel img {
+	border-radius: 20px;
+}
+
+#mirror img {
+	border-radius: 0;
 }
 
 .illustration {
@@ -210,10 +223,6 @@ header h2 {
 
 .section-header .flex-container {
 	flex-flow:nowrap;
-}
-.section-header .logo {
-	margin-top:1em;
-	margin-right:2em;
 }
 
 .flex-item {
@@ -407,18 +416,18 @@ section {
 
 /* Sections
 -------------------------------------------------- */
+.section-header .logo {
+	margin-top:1em;
+	margin-right:2em;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: auto;
+}
 
 .section-body {
 	position: relative;
 	margin-top: 2em;
 /* 	margin-left: 10px; */
-}
-
-
-.logo {
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: auto;
 }	
 
 
@@ -429,11 +438,33 @@ section {
 	height: 75px;
 } */
 
-#jut .logo {
-	background-image: url("../img/logo_jut.png");
-	height: 35px;
+#jut .logo img {
+	width: 85%;
 }
 
+#jaspersoft .logo img {
+	width: 100%;	
+}
+
+#jaspersoft #mirror {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    background: #333;
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#jaspersoft #mirror img {
+	width:48%;
+}
+
+#ge .logo img {
+	max-width: min-content;
+    width: 150%;
+}
 
 #qpharmetra .logo {
 	background-image: url("../img/logo_qpharmetra.png");
@@ -441,10 +472,7 @@ section {
 }
 
 
-#predix .logo {
-	background-image: url("../img/logo_ge.png");
-	height: 47px;
-}
+
 
 #technicalApplication .logo {
 	background-image: url("../img/logo_akamai.png");
@@ -452,10 +480,6 @@ section {
 }
 
 
-#visualSystem .logo {
-	background-image: url("../img/logo_jaspersoft.png");
-	height: 31px;	
-}
 
 #ecommerce .logo {
 	background-image: url("../img/logo_apple.png");
