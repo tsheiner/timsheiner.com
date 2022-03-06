@@ -61,6 +61,12 @@ ul li {
 
 /* p, */
 
+#pitch p.lead {
+	font-size: 160%;
+    line-height: 165%;
+    font-weight: 500;
+}
+
 a {
   color: #0099e5;
 }
@@ -124,11 +130,11 @@ header h2 {
 }
 
 .testimonial {
-	font-family: "museo-slab","Georgia",serif;
-	color:#FF5600;
+	font-family: 'Glegoo',"Georgia",serif;
+	color:#f19355;
 	font-weight: 300;
 	font-size: 110%;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	margin-top: 2em;
 	text-transform: none;
 }
@@ -146,11 +152,15 @@ header h2 {
 	opacity: 0.6;
 }
 
+.caption {
+	font-family: "Amiko", sans-serif;
+}
+
 .two-up .caption {
-	font-size: 120%;
+	font-size: 100%;
 	text-align: left;
-	margin: .5rem 0;
-	font-weight: 500;
+	margin: .25rem 0 .5rem 1rem;
+	font-weight: 700;
 }
 
 /* Images
@@ -168,14 +178,10 @@ header h2 {
 	margin-bottom:50px; */
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 8px;
-    background: #e28764;
-    border: 1px solid #9cf0a7;
+    background: #333;
+    border: 1px solid #a3a3a3;
     box-sizing: border-box;
     padding: 2px;
-}
-
-.two-up  .screenshot{
-	margin-bottom: 2rem;
 }
 
 .illustration {
@@ -215,6 +221,31 @@ header h2 {
 	position: relative;
 }
 
+.flex-item.bezel {
+	padding:.5rem;
+	height:fit-content;
+	background-color: #545353;
+	border-radius: 8px;
+	border: 1px solid #333;
+
+}
+
+.one-up .flex-item.bezel {
+	position: relative;
+	padding-bottom: 2rem;
+	margin: 1rem 2rem;
+
+}
+
+.one-up .caption {
+	position: absolute;
+	bottom: -.25rem;
+	width: 100%;
+	text-align: center;
+	font-size: 80%;;
+}
+
+
 /* .flex-item .logo {
 	margin-right:2em;
 	background-size:cover;
@@ -244,7 +275,7 @@ header h2 {
 }
 
 .two-up .flex-item {
-	flex-basis: 48%;
+	flex-basis: 47%;
 }
 
 .twothird {
@@ -469,6 +500,17 @@ section {
 	font-size: smaller;
 }
 
+#salesforce #mobile {
+	position: absolute;
+	width:15%;
+	bottom:1.5rem;
+	right: 2rem;
+	/* box-shadow: 5px 5px 5px rgba(38,30,20,0.8); */
+	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+	border-radius: 20px;
+
+
+}
 section#colophon h1 {
 	border-top: 1px solid #7D442B;;
 	font-size: 20px;
@@ -623,11 +665,6 @@ header .contactInfo {
 		padding-top: 0;
 	}
 
-	.two-up {
-		/* margin-left: 0;
-		margin-right: 0; */
-	}
-
 	.third,
 	.twothird,
 	.half,
@@ -641,22 +678,7 @@ header .contactInfo {
 
 	.flex.two-up {
 		margin: 0;
-	}
-
-	.two-up .caption {
-		/* font-size: 120%;
-		font-weight: 500;
-		margin: .5rem 1rem;
-		text-align: left; */
-		position: absolute;
-		color: rgb(20, 158, 34);
-		right: 10px;
-		bottom: 40px;
-		font-weight: 300;
-		text-shadow: 2px 2px 2px rgba(92, 175, 99, 0.5);
-		font-family:Inconsolata, sans-serif;
-	}
-	
+	}	
 	.testimonial {
 		color:#ff7000;
 		font-size: 130%;
@@ -745,10 +767,6 @@ header .contactInfo {
 }
 
 /* end teaser */
-
-  .third,.twothird,.half {
-	/* flex-basis: 100%; */
-}
 
 .two-up .flex-item {
 	margin-bottom: 2rem;;
