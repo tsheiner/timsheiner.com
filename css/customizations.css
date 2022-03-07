@@ -438,12 +438,13 @@ section {
 	height: 75px;
 } */
 
-#jut .logo img {
+#jut img.logo {
 	width: 85%;
 }
 
-#jaspersoft .logo img {
-	width: 100%;	
+#jaspersoft img.logo {
+	width: 13px;0px;
+	height:25px;	
 }
 
 #jaspersoft #mirror {
@@ -461,9 +462,26 @@ section {
 	width:48%;
 }
 
-#ge .logo img {
-	max-width: min-content;
-    width: 150%;
+#akamai img.logo {
+	width:120px;
+	height:55px;
+}
+
+#ge img.logo {
+	width:125px;
+	height:125px;
+}
+
+
+#apple img.logo {
+	width: 125px;
+	height: 154px;
+}
+
+
+.section-header .flex-container {
+	justify-content: flex-start;
+	gap: 1rem;
 }
 
 #qpharmetra .logo {
