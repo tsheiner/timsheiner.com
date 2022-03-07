@@ -433,17 +433,18 @@ section {
 
 /* section specific 
 --------------------------- */
-/* #salesforce .logo {
-	background-image: url("../img/logo_salesforce.png");
-	height: 75px;
-} */
+#salesforce img.logo {
+	width:150px;
+	height:105px;
+}
 
 #jut img.logo {
-	width: 85%;
+	width:100px;
+	height:29px;
 }
 
 #jaspersoft img.logo {
-	width: 13px;0px;
+	width: 130px;
 	height:25px;	
 }
 
