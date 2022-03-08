@@ -99,7 +99,7 @@ h1 {
 	font-size: 220%;
 	text-transform: none;
 	text-decoration: none;
-	line-height: 1.2;
+	line-height: 1.4;
 	margin: 1.2em 0 0.3em 0;
 }
 
@@ -163,10 +163,10 @@ header h2 {
 }
 
 .two-up .caption {
-	font-size: 100%;
+	font-size: 90%;
 	text-align: left;
-	margin: .25em 0 .5em 1em;
-	font-weight: 700;
+	margin: 0 0 .25em .5em;
+	font-weight: 500;
 }
 
 /* Images
@@ -185,6 +185,21 @@ header h2 {
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
     padding: .1em;
+}
+
+img.flex-item {
+	flex-grow: 0;
+}
+
+.screen {
+	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: .5em;
+    background: #333;
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    padding: .1em;
+	justify-content: space-around;
+	display: flex;
 }
 
 .one-up .screenshot {
@@ -227,40 +242,6 @@ header h2 {
 	flex: 0 1 auto;
 	position: relative;
 }
-
-.flex-item.bezel {
-	padding: 0.5em;
-    height: fit-content;
-    background-color: #545353;
-    border-radius: 1em;
-    border: 3px solid #716e6e;
-    box-shadow: 1em 1em 1em rgb(33 33 33 / 50%);
-}
-
-.one-up .flex-item.bezel {
-	position: relative;
-	padding-bottom: 2em;
-	margin: 1em 2em;
-
-}
-
-.one-up .caption {
-	position: absolute;
-	bottom: -.25em;
-	width: 100%;
-	text-align: center;
-	font-size: 1em;
-	font-weight: 500;
-	/* text-shadow: -1px -1px 0px rgba(49, 49, 49, 0.81); */
-
-}
-
-
-/* .flex-item .logo {
-	margin-right:2em;
-	background-size:cover;
-	width:20%;
-} */
 
 .main {
 	flex-shrink: 1;
@@ -320,6 +301,7 @@ header h2 {
 	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
 	border-radius: 20px;
 	position: relative;
+	padding:2%;
 }
 
 #jumbotron #missionControl {
@@ -350,6 +332,32 @@ header h2 {
 
 #jumbotron h1 .newLines {
 	margin-bottom:  10%;
+
+}
+
+.flex-container.bezel,
+.flex-item.bezel {
+	padding: 0.5em;
+    height: fit-content;
+    background-color: #545353;
+    border-radius: 1em;
+    border: 3px solid #716e6e;
+    box-shadow: 1em 1em 1em rgb(33 33 33 / 50%);
+}
+
+.one-up .flex-item.bezel {
+	position: relative;
+	padding-bottom: 2em;
+	margin: 1em 2em;
+
+}
+
+.one-up .caption {
+	position: absolute;
+	bottom: -.25em;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
 
 }
 
@@ -449,12 +457,7 @@ section {
 	height:25px;	
 }
 /*foo*/
-#jaspersoft #special {
-	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 8px;
-    background: #333;
-    border: 1px solid #a3a3a3;
-    box-sizing: border-box;
+#jaspersoft .screen {
     padding: 10px;
 }
 
@@ -489,6 +492,15 @@ section {
 	width: 106px;
 	height: 131px;
 }
+
+#apple .bezel img {
+	height: auto;
+	width: 48%;
+	margin: .25em;
+	align-self: start;
+	border-radius: .25em;
+}
+
 
 #pharsight img.logo {
 	width: 169px;
@@ -739,7 +751,6 @@ header .contactInfo {
 		margin: 0;
 	}	
 	.testimonial {
-		color:#ff7000;
 		font-size: 130%;
 	}
 	
