@@ -30,10 +30,8 @@ body > .navbar,
 body {
   position: relative;
   background-repeat: repeat;
-  /* font-family: 'Source Sans Pro', "Verdana", sans-serif; */
-  font-family:'Roboto Serif', serif; ; 
-  font-weight: 300;
-  font-size: 110%;
+  font-family:'Roboto Serif', serif;
+  line-height: unset;
 }
 
 .navbar,
@@ -59,61 +57,59 @@ ul li {
 
 /* Baseline Typography
 -------------------------------------------------- */
-
-/* p, */
-
-#pitch p.lead {
-	font-size: 160%;
-    line-height: 165%;
-    font-weight: 500;
+html {
+	font-size: 16px;
 }
 
 a {
-  color: #0099e5;
+	color: #0099e5;
+  }
+  
+  a:hover{
+	color: #0099e5;
+	text-decoration: underline;
+  }
+
+p.lead {
+	font-size:1.4rem;
+} 
+
+p.caption {
+	font-size:1rem;
+	font-family: 'Inconsolata', monospace;
 }
 
-a:hover{
-  color: #0099e5;
-  text-decoration: underline;
+#objective p.lead {
+	font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 500;
 }
 
-#me h1,
-#me h2, 
-#portfolio h1 {
-	/* font-family: 'Source Sans Pro', "Verdana", sans-serif; */
-}
-
-#portfolio .intro-text {
-	  margin-bottom:20px;
-	}
-	
-.intro-text h1 {
-		font-size: 350%;
-		line-height: 1.2em;
-		margin-top: 0.25em;
+#pitch h1 {
+	margin-top: .25rem;
 }
 
 h1 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 220%;
+	font-size: 2rem;
 	text-transform: none;
 	text-decoration: none;
-	line-height: 1.4;
-	margin: 1.2em 0 0.3em 0;
+	line-height: 3rem;
+	margin: 1.2rem 0 0.3rem 0;
 }
 
 
 h2 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 80%;
+	font-size: .8rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 0.018em;
+	letter-spacing: 0.018rem;
 	word-spacing: normal;
-	line-height: 0.5;
-	margin-bottom: 1em;
+	line-height: 1rem;
+	margin-bottom: 1rem;
 	opacity: .5;
 }
 
@@ -124,33 +120,33 @@ header h2 {
 	font-size: 32px;
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 0.018em;
+	letter-spacing: 0.018rem;
 	word-spacing: 	normal;
 	line-height: 1.3;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 }
 
 .testimonial {
+	font-size: 1.6rem;
+    line-height: 2.5rem;
 	font-family: 'Roboto', sans-serif;
     color: cornflowerblue;
     font-weight: 500;
-    font-size: 1.5em;
-    line-height: 1.6em;
-    margin-top: 2em;
+    margin-top: 2rem;
     text-transform: none;
-    text-shadow: 0.1em 0.1em 0.1em rgba(24, 24, 199, 0.81);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 199, 0.81);
 }
 
 .attribution {
 	font-style: italic;
-	font-size: 110%;
-	line-height: 1.1em;
+	font-size: 1rem;
+	line-height: normal;
 }
 
 .annotation {
-	font-size: 100%;
+	font-size: 1rem;
 	line-height: normal;
-	margin-top:1em;
+	margin-top:1rem;
 	opacity: 0.6;
 }
 
@@ -158,14 +154,10 @@ header h2 {
 	color:cornflowerblue;
 }
 
-.caption {
-	font-family: 'Inconsolata', monospace;
-}
-
 .two-up .caption {
-	font-size: 90%;
+	font-size: 1.2rem;
 	text-align: left;
-	margin: 0 0 .25em .5em;
+	margin: 0 0 .25rem .5rem;
 	font-weight: 500;
 }
 
@@ -173,18 +165,11 @@ header h2 {
 -------------------------------------------------- */
 
 #portfolio img {
-	width: 97%;
+	/* width: 97%;
 	display: block;
 	margin:30px auto 50px;
-}
+	margin: 10px auto 20px; */
 
-.screenshot {
-	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: .5em;
-    background: #333;
-    border: 1px solid #a3a3a3;
-    box-sizing: border-box;
-    padding: .1em;
 }
 
 img.flex-item {
@@ -193,21 +178,17 @@ img.flex-item {
 
 .screen {
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: .5em;
+    border-radius: .5rem;
     background: #333;
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
-    padding: .1em;
+    padding: .1rem;
 	justify-content: space-around;
 	display: flex;
 }
 
 .one-up .screenshot {
-	padding:0em;
-}
-
-.one-up .bezel img {
-	border-radius: .7em;
+	padding:0rem;
 }
 
 .illustration {
@@ -243,6 +224,10 @@ img.flex-item {
 	position: relative;
 }
 
+#pitch .flex-item {
+	align-self: center;
+}
+
 .main {
 	flex-shrink: 1;
 	height: fit-content;
@@ -274,7 +259,7 @@ img.flex-item {
 }
 
 .flex.two-up {
-	margin: 2em .5em;
+	margin: 2rem .5rem;
 }
 
 .fullwidth {
@@ -295,7 +280,7 @@ img.flex-item {
 
 /* Home */
 
-#jumbotron {
+#jumbotron .bezel {
 	border: 4px solid #AAAAAA;
 	box-sizing: border-box;
 	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
@@ -337,37 +322,29 @@ img.flex-item {
 
 .flex-container.bezel,
 .flex-item.bezel {
-	padding: 0.5em;
+	padding: 0.5rem;
     height: fit-content;
     background-color: #545353;
-    border-radius: 1em;
+    border-radius: 1rem;
     border: 3px solid #716e6e;
-    box-shadow: 1em 1em 1em rgb(33 33 33 / 50%);
+    box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
 }
 
 .one-up .flex-item.bezel {
 	position: relative;
-	padding-bottom: 2em;
-	margin: 1em 2em;
+	padding-bottom: 30px;
+	margin: 1rem 2rem;
 
 }
 
 .one-up .caption {
 	position: absolute;
-	bottom: -.25em;
+	bottom: -.25rem;
 	width: 100%;
 	text-align: center;
-	font-size: 1em;
-
 }
 
-section {
-	margin:1em 0 4em 0;
-}
 
-#me .section-header {
-	border-color: #33291B;
-}
 
 .responsibilities {
 	margin:0 0 20px 20px;
@@ -395,12 +372,8 @@ section {
 	color: #666;
 }
 
-#me section {
-	margin-top:1em;
-}
-
 #me .lead {
-	margin-top:1em;
+	margin-top:1rem;
 }
 
 #me h1 {
@@ -418,27 +391,73 @@ section {
 }
 
 #me .text-caption {
-	font-size: 0.8em;
-	line-height: 1.2em;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
 }
 
 
 /* Sections
 -------------------------------------------------- */
-.section-header .logo {
-	margin-top:1em;
-	margin-right:2em;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: auto;
+.section-header {
+
 }
 
 .section-body {
 	position: relative;
-	margin-top: 2em;
-/* 	margin-left: 10px; */
+	margin-top: 2rem;
 }	
 
+section {
+	margin:1rem 0 4rem 0;
+}
+
+section#pitch {
+	border-bottom: 2px solid #ccc;
+	margin-right: 1rem;
+	margin-left:1rem;
+}
+
+section#objective {
+	margin-top:4rem;
+	margin-bottom: 0;
+}
+
+section#portfolio {
+	margin-left:1rem;
+	margin-right:1rem;
+}
+
+#portfolio section {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #666;
+}
+
+section #pharsight {
+	border-bottom:none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+section#colophon h1 {
+	border-top: 1px solid #7D442B;;
+	font-size: 20px;
+}
+
+section#colophon p, section#colophon li {
+	margin-bottom: 2px;
+}
+
+section#bridge {
+	padding-top:2rem;
+}
+
+#me .section-header {
+	border-color: #33291B;
+}
+
+#me section {
+	margin-top:1rem;
+}
 
 /* section specific 
 --------------------------- */
@@ -456,7 +475,7 @@ section {
 	width: 130px;
 	height:25px;	
 }
-/*foo*/
+
 #jaspersoft .screen {
     padding: 10px;
 }
@@ -466,7 +485,7 @@ section {
 }
 
 #jaspersoft #special>img {
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 #jaspersoft #mirror {
@@ -496,9 +515,9 @@ section {
 #apple .bezel img {
 	height: auto;
 	width: 48%;
-	margin: .25em;
+	margin: .25rem;
 	align-self: start;
-	border-radius: .25em;
+	border-radius: .25rem;
 }
 
 
@@ -510,7 +529,7 @@ section {
 
 .section-header .flex-container {
 	justify-content: flex-start;
-	gap: 1em;
+	gap: 1rem;
 }
 
 #qpharmetra .logo {
@@ -574,25 +593,11 @@ section {
 #salesforce #mobile {
 	position: absolute;
 	width:15%;
-	bottom:1.5em;
-	right: 2em;
+	bottom:1.5rem;
+	right: 2rem;
 	/* box-shadow: 5px 5px 5px rgba(38,30,20,0.8); */
-	filter: drop-shadow(0.35em 0.35em 0.4em rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 	border-radius: 20px;
-
-
-}
-section#colophon h1 {
-	border-top: 1px solid #7D442B;;
-	font-size: 20px;
-}
-
-section#colophon p, section#colophon li {
-	margin-bottom: 2px;
-}
-
-section#bridge {
-	padding-top:2em;
 }
 
 #cca img#video-thumbnail {
@@ -616,8 +621,7 @@ section#bridge {
 /* Footer
 -------------------------------------------------- */
 
-.footer {
-	margin-top: 70px;
+footer {
 	padding: 10px 0 10px 0;
 	text-align:center;
   }
@@ -651,7 +655,7 @@ footer a,
 
 header .contactInfo {
 	margin-top: 25px;
-	font-size: .8em;
+	font-size: .8rem;
 	font-weight:400;
 }
 
@@ -707,9 +711,17 @@ header .contactInfo {
 /* Tablet to desktop
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px) {
-  /* Remove any padding from the body */
+  /* Rremove any padding from the body */
+ html {
+	 font-size: 14px;
+ } 
+ 
   body {
     padding-top: 0;
+  }
+
+  .container {
+	  width:90%;
   }
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
@@ -723,15 +735,12 @@ header .contactInfo {
   .bs-docs-sidenav.affix {
     top: 0;
   }
-  #jumbotron h1 {
-	  font-size: 250%;
-  }
 }
 
 /* Tablet
 ------------------------- */
 @media (max-width: 767px) {
-  /* Remove any padding from the body */
+  /* Rremove any padding from the body */
 	body {
 		padding-top: 0;
 	}
@@ -743,19 +752,8 @@ header .contactInfo {
 		flex-basis: 100%;
 	}
 	
-	#portfolio {
-		background-color: #2a2a2a;
-	}
-
 	.flex.two-up {
 		margin: 0;
-	}	
-	.testimonial {
-		font-size: 130%;
-	}
-	
-	#portfolio img {
-		margin: 10px auto 20px;
 	}	
 	
 	/* Widen masthead and social buttons to fill body padding */
@@ -769,14 +767,6 @@ header .contactInfo {
 	#jumbotron h1 {
 		font-size: 150%;
 		font-weight: 500;
-	}
-
-	h1 {
-		font-size: 150%;
-	}
-
-	.masthead h1 {
-		font-size: 90px;
 	}
 	.masthead p,
 	.masthead .btn {
@@ -820,48 +810,92 @@ header .contactInfo {
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
-  /* Remove padding above jumbotron */
-  body {
-    padding-top: 0;
-    font-size:85%;
-  }
+  
+	html {
+		font-size: 12px;
+	}	
+
+	body {
+	padding: 0;
+	}
+
+	.container {
+		margin-left: 0.5rem;
+	}
 
   /* change visible location of teaser */
-.teaser.mobile {
-	display:block;
-	margin-top:20px;
-}
+	.teaser.mobile {
+		display:block;
+		margin-top:20px;
+	}
 
-.teaser.desktop {
-	display:none;
-}
+	.teaser.desktop {
+		display:none;
+	}
 
-/* end teaser */
+	/* end teaser */
 
-.two-up .flex-item {
-	margin-bottom: 2em;;
-}
+	.two-up .flex-item {
+		margin-bottom: 2rem;;
+	}
 
-.two-up .caption {
-	display: none;
-}
+	.two-up .caption {
+		display: none;
+	}
+
+	.screen {
+		border:none;
+		box-shadow:none;
+		padding:0;
+		background:none;
+		border-radius: 4px;
+		width:95%;
+		margin:auto;
+		box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
+	}
+
+	.testimonial {
+		font-size: 1.2rem;
+		line-height:
+		1.5rem;
+	}
+
+	.flex-container.bezel,
+	.flex-item.bezel {
+		padding: 0;
+		height: fit-content;
+		background-color: transparent;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+	}
+
+	.one-up .flex-item.bezel {
+		margin:1.5rem 0 0 0;
+	}
 
   /* Change up some type stuff */
+  p.lead {
+	font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+ 
   h2 small {
     display: block;
   }
 
   /* Downsize the jumbotrons */
   .jumbotron h1 {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
   #jumbotron h1 {
-	font-size: 200%;
+	/* font-size: 200%; */
 }
 
   .jumbotron p,
   .jumbotron .btn {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .jumbotron .btn {
     display: block;
@@ -876,7 +910,7 @@ header .contactInfo {
 
   /* Marketing on home */
   .marketing h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
 
   /* center example sites */
@@ -919,20 +953,55 @@ header .contactInfo {
 /* Portrait phones
 ------------------------- */
 @media (max-width: 375px) {
-	body {
-		font-size:65%;
-	}
 	
+	.container {
+		margin-left:1rem;
+	}
+
+	section {
+		margin-bottom:0 !important;
+	}
+
+	section#objective {
+		margin-top: 0;
+	}
+
+	#jumbotron .bezel {
+		border: 2px solid #aaa;
+		border-radius: 4px;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	#jumbotron .bezel img {
+		width:auto;
+		border-radius: 0;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+		line-height: 1.4;
+	}
+
+	#objective p.lead {
+		font-size: 1.2rem;
+		line-height: 1.6m;
+	}
+
 	.third,.twothird,.half,.cta {
 		flex-basis: 100%;
 	}
 
-	/* #jumbotron h1 {
-		font-size: 175%;
-		font-weight: 500;
-	} */
-}
+	#apple .bezel img {
+		width: auto;
+	}
 
+	#apple .screen img:last-child,
+	#salesforce #mobile {
+		display:none;
+	}
+
+}
 /* Utility
 ------------------------- */
 
