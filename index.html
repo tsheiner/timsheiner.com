@@ -15,7 +15,7 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Museo-Slab"> -->
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Glegoo&family=Merriweather:ital,wght@1,300&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&family=Roboto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
 	</style>
     
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
@@ -94,14 +94,14 @@
 	================================================== -->
 		
 		<div class="container">	
-				<div class="flex">
-					<div id="jumbotron">
+				<div class="flex-container flex">
+					<div id="jumbotron" class="flex-item bezel">
 						<h1>						
 							<span class="newLines">Hi! I'm Tim.</span>
 							<span class="newLines">I want to help you build your virtual mission control.</span>
 						</h1>
 						<img id="me_jumbotron" src="img/me_jumbotron.png">
-						<img id="missionControl" src="img/missionControl.jpg">
+						<img id="missionControl" class="screenshot" src="img/missionControl.jpg">
 					</div>
 				</div>
 		</div>		
@@ -114,24 +114,14 @@
 				</div>
 			</div> -->
 			<div class="flex-container flex two-up">						
-				<!-- <div class=" flex-item bezel">
-					<p class="caption">Service Console</p>
-					<img class="screenshot" src="img/mc_insights2.png">
-				</div> -->
 				<div class=" flex-item">
 					<h1>My passion is creating tools that help people manage complex systems. </h1>
 				</div>
 				<div class=" flex-item bezel">
-					<p class="caption">Release Pipeline</p>
-					<img class="screenshot" src="img/mc_pipeline.png">
+					<p class="caption">Security Dashboard</p>
+					<img class="screenshot" src="img/mc_securitycenter.png">
 				</div>
 			</div>
-
-				<!-- <div class="flex-container flex">
-					<div class=" flex-item fullwidth">
-						<h1>I’ve designed experiences for users of varying technical levels across many different domains.</h1>
-					</div>
-				</div> -->
 			<div class="flex-container flex two-up">						
 				<div class=" flex-item bezel">
 					<p class="caption">Analytic Notebook</p>
@@ -139,28 +129,21 @@
 				</div>
 				<div class=" flex-item">
 					<h1>I’ve designed experiences for users of varying technical levels across many different domains.</h1>
-					<!-- <img class="screenshot" src="img/mc_securitycenter.png"> -->
 				</div>
 				
 			</div>
-			<!-- <div class="flex-container flex">
-				<div class=" flex-item fullwidth">
-					<h1>I'm good at this work because I always meet my users—and my partners—where they are.</h1>
-				</div>
-			</div> -->
 			<div class="flex-container flex two-up">						
 				<div class=" flex-item">
-					<h1>I'm good at this work because I always meet my users—and my partners—where they are.</h1>
-					<!-- <img class="screenshot" src="img/mc_phoenix.jpg"> -->
+					<h1>I excel at this work by meeting users where they are.</h1>
 				</div>
 				<div class=" flex-item bezel">
-					<p class="caption">IoT Fleet Management</p>
+					<p class="caption">IoT Fleet Setup</p>
 					<img class="screenshot" src="img/mc_iotcontext.png">
 				</div>
 			</div>
 			<div class="flex-container flex">
 				<div class=" flex-item fullwidth">
-					<p class="lead">Right now I am looking for new fulltime leadership opportunity to join a crack team working to operationalize a complex system management problem in the area of <span class="emphasis">logistics</span>, <span class="emphasis">manufacturing</span>, <span class="emphasis">alternative energy</span> or <span class="emphasis">ecological health</span>.</p>
+					<p class="lead">Right now I am looking for new fulltime leadership opportunity with an experienced team working to operationalize a complex system management problem in the area of <span class="emphasis">logistics</span>, <span class="emphasis">manufacturing</span>, <span class="emphasis">alternative energy</span> or <span class="emphasis">ecological health</span>.</p>
 					<p class="lead">I will bring design craft to your team and hit the ground running.  Beyond <span class="emphasis">user experience</span>, I have expert-level understanding of <span class="emphasis">system thinking</span>, <span class="emphasis">machine learning</span>, <span class="emphasis">networks</span>, <span class="emphasis">high scale compute</span>, and <span class="emphasis">biological systems</span>. </p>
 				</div>
 			</div>
@@ -175,10 +158,10 @@
 <section id="salesforce">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<img class="logo" src="/img/logo_salesforce.png">
+			<img class="logo" src="img/logo_salesforce.png">
 			<div class=" flex-item">	
 				<h2>Customer Relationship Management Platform</h2>		
-				<p class="lead">During my tenure at this CRM leader, I worked on our design system, our IoT product and , most recently, a declarative, VCS-backed, change management & release pipeline experience.</p>
+				<p class="lead">My most recent work for this CRM leader has been focused on a <span class="emphasis">developer experience (DX)</span> that enables low and pro code developers to collabrate with a project-based, VCS-backed, change & release management toolset. During my tenure with Salesforce I also worked on our <span class="emphasis">IoT product</span> as well as managed our design system team.</p>
 			</div>
 		</div>
 	</div>
@@ -186,19 +169,31 @@
 		<div class="flex-container flex one-up">
 			
 			<div class="flex-item bezel">
-				<p class="caption">I catalyzed internal alignment for a project-based developer experience.</p>
+				<p class="caption">Story telling is a superpower.</p>
 				<img  class="screenshot" src="img/salesforce_projects.png">
 			</div>
 			<div class="flex-item bezel">
-				<p class="caption">Git for low code user integrated with pro code repository.</p>
+				<p class="caption">Source control for low code users.</p>
 				<img  class="screenshot" src="img/salesforce_changeManagement.png">
-			</div>			
-			<div class="flex-item bezel">
-				<p class="caption">Security Dashboard</p>
-				<img  class="screenshot" src="img/mc_securitycenter.png">
 			</div>
 			<div class="flex-item bezel">
-				<p class="caption">IoT Monitoring</p>
+				<p class="caption">Full transaction transparency for trust.</p>
+				<img  class="screenshot" src="img/salesforce_doce_activity.png">
+			</div>	
+			<div class="flex-item bezel">
+				<p class="caption">Release Pipeline</p>
+				<img  class="screenshot" src="img/salesforce_doce_pipeline.png">
+			</div>		
+			<div class="flex-item bezel">
+				<p class="caption">IoT onboarding</p>
+				<img  class="screenshot" src="img/salesforce_iot_bindEvent.png">
+			</div>
+			<div class="flex-item bezel">
+				<p class="caption">Debugging Experience</p>
+				<img  class="screenshot" src="img/salesforce_iot_monitoring.png">
+			</div>
+			<div class="flex-item bezel">
+				<p class="caption">IoT monitoring for customer case management.</p>
 				<img  class="screenshot" src="img/salesforce_insights_desktop.png">
 				<img  id="mobile" class="" src="img/salesforce_insights_mobile.png">
 			</div>
@@ -211,11 +206,11 @@
 <section id="jut">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<img class="logo" src="/img/logo_jut.png">
+			<img class="logo" src="img/logo_jut.png">
 			<div class=" flex-item">	
 				<h2>Streaming Analytics Platform</h2>		
-				<p class="lead">I was the initial design hire at a streaming data analytics start up where I built a design studio of 5 that executed all design work for product and marketing.</p>
-				<p class="lead">I acted as player/coach managing and growing my team, directing the overall creative output of my studio, leading detailed design projects and providing the executive team with UX strategy.</p>
+				<p class="lead">I was the initial design hire at a streaming data analytics start up where I built a <span class="emphasis">design studio of 5</span> that executed <span class="emphasis">all design work</span> for <span class="emphasis">product</span> and <span class="emphasis">marketing</span>.</p>
+				<p class="lead">I acted as <span class="emphasis">player/coach</span> managing and growing my team, directing the overall creative output of my studio, leading detailed <span class="emphasis">design projects</span> and providing the executive team with <span class="emphasis">UX strategy</span>.</p>
 			</div>
 		</div>
 	</div>
@@ -254,30 +249,23 @@
 <section id="jaspersoft">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<img class="logo" src="/img/logo_jaspersoft.png">
+			<img class="logo" src="img/logo_jaspersoft.png">
 			<div class="flex-item">	
 				<h2>Business Intelligence Platform</h2>		
-				<p class="lead">I dramatically improved the Jaspersoft user experience by adding search functionality and by introducing an engaging and consistent visual design.</p>
-				<p class="lead">I also led and was front end programmer for the project to modernize the application front end framework, with a modular and standards-compliant design system I conceived and implemented prior Bootstrap popularized the concept.</p>
+				<p class="lead">I improved the user experience at this BI start up by introducing a faceted search functionality. The object-oriented, standards-compliant and easily-themed UI re-design I led complemented our white label business model.</p>
 			</div>
 		</div>
 	</div>
 	<div class="section-body">
 		<div class="flex-container flex one-up">
-			
 			<div class="flex-item bezel">
-				<p class="caption">I created a modern and engaging UI for Ad Hoc Reporting</p>
-				<img  class="screenshot" src="img/jasperServerRedesign-3.png">
-			</div>
-			<div class="flex-item bezel">
-				<p class="caption">I introduced a faceted search experience.</p>
-				<img  class="screenshot" src="img/jasperServerRedesign-2.png">
-			</div>
-			<div class="flex-item bezel">
-				<p class="caption">The front end framework I designed was easy to theme.</p>
-				<div id="mirror" class="flex-container flex">
-					<img  class="flex-item" src="img/JIF-5reflected.png">
-					<img  class="flex-item" src="img/JIF-4reflected.png">
+				<p class="caption">A standards-compliant, themeable UI for our white label business model.</p>
+				<div id="special" class="flex-container flex">				
+						<img  class="" src="img/jasperServerRedesign-2.png">
+					<div id="mirror" class="flex-container flex">
+						<img  class="flex-item" src="img/JIF-5reflected.png">
+						<img  class="flex-item" src="img/JIF-4reflected.png">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -295,7 +283,7 @@
 <section id="akamai">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<img class="logo" src="/img/logo_akamai.png">
+			<img class="logo" src="img/logo_akamai.png">
 			<div class=" flex-item">	
 				<h2>Content Delivery Network Self Service Application</h2>		
 				<p class="lead">I collaborated with a great team at Hot Studio to work on the redesign of Akamai's self-service portal.  I contributed to the user research, UX strategy and design that led to a much easier to understand navigational model for the experience.</p>
@@ -322,11 +310,10 @@
 <section id="ge">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<img class="logo" src="/img/logo_ge.png">
+			<img class="logo" src="img/logo_ge.png">
 			<div class=" flex-item">	
 				<h2>IoT Platform</h2>		
-				<p class="lead">I contracted with GE's Predix project to develop a process for integrating UX and Agile. The plan was that I would pilot this first with a specific scrum team and then work on exporting the approach to other teams within the organization. </p>
-				<p class="lead">I exceeded expectations at this assignment by focusing first on gaining the trust of the software manager and developers on the team through my understanding of the technical details of software development.  From this position of credibility I was able to inject a long term vision and structured, repeatable user-centered methods into all stages of their Agile cycle. I consolidated the value I had introduced by mentoring a young designer on the team to be able to drive the vision and the Agile/UX integration process I had developed. Other scrum teams observed the positive outcomes of the pilot and began requesting dedicated UX support.</p>
+				<p class="lead">I contracted with GE during the development of their Predix IoT platform to bring structured, repeatable user-centered methods into all stages of their Agile cycle. I piloted the process successfully, consolidated the win by mentoring a young designer to manage process I'd pioneered and was gratified to see other scrum teams begin requesting dedicated UX support.</p>
 			</div>
 		</div>
 	</div>
@@ -340,60 +327,61 @@
 <section id="apple">
 	<div class="section-header">		
 		<div class="flex-container flex">
-			<!-- <div class="flex-item third logo"> -->
-				<img class="logo" src="/img/logo_apple.png">
-			<!-- </div> -->
+				<img class="logo" src="img/logo_apple.png">
 			<div class=" flex-item">	
 				<h2>e-commerce platfrom</h2>		
-				<p class="lead">I worked for the Apple Online Store on search and community features.</p>
+				<p class="lead">At Apple I worked on search and community features for our online store.</p>
 			</div>
 		</div>
 	</div>
 	<div class="section-body">
 		<div class="flex-container flex two-up">
 			<div class="flex-item bezel">
-				<!-- <p class="caption">I helped update the monitoring and control experience.</p> -->
 				<img  class="screenshot" src="img/apple_search.png">
 			</div>
 			<div class="flex-item bezel">
-				<!-- <p class="caption">I helped update the monitoring and control experience.</p> -->
 				<img  class="screenshot" src="img/apple_reviews.png">
 			</div>
 			
 		</div>
 	</div>
-	<!-- <div class="section-footer">
-		<h2 class="testimonial">"Tim is an excellent designer, strategist, communicator and change agent. He consistently suggested ideas to me a month or more before I began to hear those same things from other people."</h2>
-					<p class="attribution">Dan Harrelson, Design Director for Energy Management & Design Technology, GE</p>
-	</div> -->
 
 </section>
-<!-- ================================================== -->	  
-	
-				<section id="cca">
-				<div class="section-header">
-					<h2>Undergraduate Interaction Design Program</h2>
-					<div class="logo"></div>
-					<p class="annotation">Part time employee responsible for:</p>
-					<ul class="responsibilities">
-						<li>Curriculum Development</li>
-						<li>Instruction & Evaluation</li>
-					</ul>
+<!-- ================================================== -->	
+<section id="pharsight">
+	<div class="section-header">		
+		<div class="flex-container flex">
+			<img class="logo" src="img/logo_pharsight.png">
+			<div class=" flex-item">	
+				<h2>Modeling & Simulation for Drug Development</h2>		
+				<p class="lead">I was the initial design hire at a streaming data analytics start up where I built a design studio of 5 that executed all design work for product and marketing.</p>
+			</div>
+		</div>
+	</div>
+	<div class="section-body">
+		<div class="flex-container flex one-up">
+			
+			<div class="flex-item bezel">
+				<p class="caption">Website</p>
+				<img  class="screenshot" src="img/mc_phoenix.jpg">
+			</div>
+			<div class="flex-item bezel">
+				<p class="caption">Data Integration GUI</p>
+				<img  class="screenshot" src="img/qPharmetra__pharmacometric_approach.png">
+			</div>
+		</div>
 				
-				<p class="lead">I was part of the founding faculty for the undergraduate Interaction Design Program at California College of Art. I developed the curriculum for the class that introduced sophomore students to System Thinking and then taught it for 3 years.</p>				
-				</div>
-				<div class="row-fluid">					
-					<div class="span12">					 	
-					 	<p class="lead">Here is a video about a class project I organized with Adobe.</p>
-					 	<div id="videoWrapper">
-							<!-- Embed code here -->
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/rBIcgyjWjkI" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
+	</div>
+	<div class="section-footer">
+		<h2 class="testimonial">"Tim is a very talented designer and big picture system thinker who can tackle complex problems and map them to elegant user experiences and designs. Working with Tim, I learned a ton about how to integrate top notch design thinking into product development and I would be very pleased to have the chance to work with him again."</h2>
+		<p class="attribution">Michael Demmer, Vice President, Engineering at Jut</p>
+	
+		<h2 class="testimonial">"Tim is a great designer and brings a broad set of skills to the product development process. At Jut, he built and effectively led a talented team of designers. He consistently challenged our product and development teams by asking the right questions, and had a great sense for when and where to innovate versus leveraging the state of the art. He can institute rigorous process when it matters and do more free form work when needed. Tim is fun to work with, and most important, he is a high-quality human being. I'd love to work with him again."</h2>
+		<p class="attribution">Steve McCanne, CEO & Founder at Jut</p>
+	</div>
 
-			</section>
-<!-- ================================================== -->		    		
+</section>
+<!-- ================================================== --> 	    		
 				<section id="qpharmetra">
 					<div class="section-header">
 						<h2>Data Modeling Consultancy</h2>
@@ -421,92 +409,9 @@
 						</div>
 					</div>
 				</section>
-<!-- ================================================== -->
-<!--
-				<section id="mobileApplication">
-				<div class="section-header">
-					<h2>Cognitive Assessment Platform</h2>
-					<div class="logo"></div>
-					<p class="annotation">Contractor responsible for:</p>
-					<ul class="responsibilities">
-						<li>Interaction Design</li>
-						<li>Prototyping</li>
-					</ul>
-				
-				<p class="lead">I worked with a team of designers on a tablet version of a previously print-only cognitive assessment system.  I introduced HTML5 prototyping to our process to improve the efficiency of our communication with both our client and our development partner.</p>					</div>
-				<div class="row-fluid">
-					<div class="span12">
-					 	<img class="screenshot" src="img/q-interactive.jpg">
-					</div>
-				</div>
-			</section>
--->	
 
-<!-- ================================================== -->
-				<section id="serviceModel">
-				<div class="section-header">
-					<h2>Financial Services</h2>
-					<div class="logo"></div>
-					<p class="annotation">Full time employee responsible for:</p>
-					<ul class="responsibilities">
-						<li>Design Management</li>
-						<li>Internal Strategic Consulting</li>
-					</ul>
-				
-				<p class="lead">At Schwab I managed designers and was also responsible for encouraging innovation.</p>
-				<p class="lead">One of my initiatives improved internal strategy discussions by introducing a simple, visual model of Schwab's retail business that was easily sketched on a whiteboard during meetings.</p>
-				</div>
-				<div class="section-body">
-					<div class="row-fluid">
-					 	<div class="span12">
-					 		<p class="lead">The model, reproducible by anyone, created a shared discussion context in meetings</p>
-					 		<img src="img/Schwab_VisionGraphic-1.png">
-					 	</div>
-					</div>
-					<div class="row-fluid">
-					<div class="span6">
-						<p class="lead">One variation was used to envision new business lines</p>
-					 	<img src="img/Schwab_VisionGraphic-2.png">
-					</div>
-					<div class="span6">
-					 	<p class="lead">Another variation helped to plan different service levels</p>
-					 	<img src="img/Schwab_VisionGraphic-3.png">
-					</div>
-				</div>
-				</div>
-			</section>
-<!-- ================================================== -->
-<!--
-				<section id="publicInterest">
-				<div class="section-header">
-					<h2>Public Interest Process</h2>
-					<div class="logo"></div>
-					<p class="annotation">Volunteer responsible for:</p>
-					<ul class="responsibilities">
-						<li>Community Organizing</li>
-						<li>Design Competition</li>
-					</ul>
-				
-				<p class="lead">I co-founded a neighborhood group that developed a collaboration between neighbors, the city and a private foundation to renovate a long-neglected park.  The approach we invented of a community-owned design and a public-private funding model has since become the standard approach for park redevelopment in San Francisco.</p>
-				<p class="lead">Our first tiny grant paid for a party in the park to bring the community together around our needs. Signatures gathered at the party established credibility with a private foundation who gave us enough money to sponsor a design competition for the park.</p>
-				<p class="lead">The excitement of the competition and the neighborhood meetings surrounding it resulted in a great design, and convinced both our private sponsors and the city that investing in our park would produce success for everyone.</p>
-				</div>
-				<div class="section-body">
-					<div class="row-fluid">
-						<div class="span12">
-						 	<img class="screenshot" src="img/Community_WalterHaas-2.png">
-						</div>
-					</div>
-					<div class="row-fluid">
-						<div class="span12">
-							 <img class="screenshot" src="img/Community_WalterHaas-1.png">
-						</div>
-					</div>
-				</div>
-				<h2 class="testimonial">"The Friends of Walter Haas Playground were extremely successful in raising private funds, and hired a Landscape Architect consultant, Studio Green, to assist the Department in preparing both preliminary park drawings and construction documents."</h2>
-				<p class="attribution">San Francisco Public Works Website</p>
-			</section>
--->
+
+
 <!-- ================================================== -->		    
 				<section id="bridge">
 					<div class="section-header">
@@ -516,7 +421,6 @@
 				</section>	
 <!-- ================================================== -->					
 
-		<!--</div>--><!-- content row -->
 	</div><!-- content container -->
 
 

@@ -30,7 +30,8 @@ body > .navbar,
 body {
   position: relative;
   background-repeat: repeat;
-  font-family: 'Source Sans Pro', "Verdana", sans-serif;
+  /* font-family: 'Source Sans Pro', "Verdana", sans-serif; */
+  font-family:'Roboto Serif', serif; ; 
   font-weight: 300;
   font-size: 110%;
 }
@@ -79,7 +80,7 @@ a:hover{
 #me h1,
 #me h2, 
 #portfolio h1 {
-	font-family: 'Source Sans Pro', "Verdana", sans-serif;
+	/* font-family: 'Source Sans Pro', "Verdana", sans-serif; */
 }
 
 #portfolio .intro-text {
@@ -130,13 +131,14 @@ header h2 {
 }
 
 .testimonial {
-	font-family: 'Glegoo',"Georgia",serif;
-	color:#f19355;
-	font-weight: 300;
-	font-size: 110%;
-	line-height: 1.4em;
-	margin-top: 2em;
-	text-transform: none;
+	font-family: 'Roboto', sans-serif;
+    color: cornflowerblue;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    margin-top: 2em;
+    text-transform: none;
+    text-shadow: 0.1em 0.1em 0.1em rgba(24, 24, 199, 0.81);
 }
 
 .attribution {
@@ -157,13 +159,13 @@ header h2 {
 }
 
 .caption {
-	font-family: "Amiko", sans-serif;
+	font-family: 'Inconsolata', monospace;
 }
 
 .two-up .caption {
 	font-size: 100%;
 	text-align: left;
-	margin: .25rem 0 .5rem 1rem;
+	margin: .25em 0 .5em 1em;
 	font-weight: 700;
 }
 
@@ -178,23 +180,19 @@ header h2 {
 
 .screenshot {
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 8px;
+    border-radius: .5em;
     background: #333;
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
-    padding: .1rem;
+    padding: .1em;
 }
 
 .one-up .screenshot {
-	padding:.5rem;
+	padding:0em;
 }
 
 .one-up .bezel img {
-	border-radius: 20px;
-}
-
-#mirror img {
-	border-radius: 0;
+	border-radius: .7em;
 }
 
 .illustration {
@@ -231,27 +229,30 @@ header h2 {
 }
 
 .flex-item.bezel {
-	padding:.5rem;
-	height:fit-content;
-	background-color: #545353;
-	border-radius: 8px;
-	border: 1px solid #333;
-
+	padding: 0.5em;
+    height: fit-content;
+    background-color: #545353;
+    border-radius: 1em;
+    border: 3px solid #716e6e;
+    box-shadow: 1em 1em 1em rgb(33 33 33 / 50%);
 }
 
 .one-up .flex-item.bezel {
 	position: relative;
-	padding-bottom: 2rem;
-	margin: 1rem 2rem;
+	padding-bottom: 2em;
+	margin: 1em 2em;
 
 }
 
 .one-up .caption {
 	position: absolute;
-	bottom: -.25rem;
+	bottom: -.25em;
 	width: 100%;
 	text-align: center;
-	font-size: 80%;;
+	font-size: 1em;
+	font-weight: 500;
+	/* text-shadow: -1px -1px 0px rgba(49, 49, 49, 0.81); */
+
 }
 
 
@@ -292,7 +293,7 @@ header h2 {
 }
 
 .flex.two-up {
-	margin: 2em .5rem;
+	margin: 2em .5em;
 }
 
 .fullwidth {
@@ -447,16 +448,26 @@ section {
 	width: 130px;
 	height:25px;	
 }
-
-#jaspersoft #mirror {
-	flex-direction: row;
-	flex-wrap: nowrap;
+/*foo*/
+#jaspersoft #special {
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 8px;
     background: #333;
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
     padding: 10px;
+}
+
+#jaspersoft #special img {
+	border-radius: 0;
+}
+
+#jaspersoft #special>img {
+	margin-bottom: 1em;
+}
+
+#jaspersoft #mirror {
+	flex-wrap: nowrap;
 }
 
 #jaspersoft #mirror img {
@@ -469,20 +480,25 @@ section {
 }
 
 #ge img.logo {
-	width:125px;
-	height:125px;
+	width:105px;
+	height: 105px;
 }
 
 
 #apple img.logo {
-	width: 125px;
-	height: 154px;
+	width: 106px;
+	height: 131px;
+}
+
+#pharsight img.logo {
+	width: 169px;
+	height: 60px;
 }
 
 
 .section-header .flex-container {
 	justify-content: flex-start;
-	gap: 1rem;
+	gap: 1em;
 }
 
 #qpharmetra .logo {
@@ -546,10 +562,10 @@ section {
 #salesforce #mobile {
 	position: absolute;
 	width:15%;
-	bottom:1.5rem;
-	right: 2rem;
+	bottom:1.5em;
+	right: 2em;
 	/* box-shadow: 5px 5px 5px rgba(38,30,20,0.8); */
-	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(0.35em 0.35em 0.4em rgba(0, 0, 0, 0.5));
 	border-radius: 20px;
 
 
@@ -812,7 +828,7 @@ header .contactInfo {
 /* end teaser */
 
 .two-up .flex-item {
-	margin-bottom: 2rem;;
+	margin-bottom: 2em;;
 }
 
 .two-up .caption {
