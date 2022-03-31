@@ -156,17 +156,43 @@ h2 {
 	color:cornflowerblue;
 }
 
+.lead .emphasis {
+	color: inherit;
+}
+
 .ellipsis {
 	width:100%;
 	text-align: center;
 	font-size: 4rem;;
 }
+
+.one-up .caption {
+	width: 100%;
+	text-align: center;
+}
+
 .two-up .caption {
+	display: none;
+	/* position: absolute;
+	bottom: 0;
+	right:.5rem;
 	font-size: 1.2rem;
-	text-align: left;
 	margin: 0 0 .25rem .5rem;
 	font-weight: 500;
+	text-align: right; */
 }
+
+.responsibilities {
+	margin:0 0 20px 20px;
+}
+
+.responsibilities li {
+	font-size: 100%;
+    margin-bottom: 0;
+    line-height: 22px;
+    opacity: 0.6;
+}
+
 
 /* Images
 -------------------------------------------------- */
@@ -232,7 +258,7 @@ img.flex-item {
 }
 
 #pitch .flex-item {
-	align-self: center;
+	align-self: auto;
 }
 
 .main {
@@ -328,9 +354,14 @@ img.flex-item {
 }
 
 #values {
-	flex-flow: nowrap;
+	/* flex-flow: nowrap; */
 }
 
+#values img {
+	align-self: flex-start;
+	flex-shrink: 1;
+	min-width: 0;
+}
 #values h1 {
 	/* position:absolute;
 	bottom: 1.5rem;
@@ -353,32 +384,13 @@ img.flex-item {
 
 .one-up .flex-item.bezel {
 	position: relative;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 	margin: 1rem 2rem;
 
 }
 
-.one-up .caption {
-	position: absolute;
-	bottom: -.25rem;
-	width: 100%;
-	text-align: center;
-}
 
-
-
-.responsibilities {
-	margin:0 0 20px 20px;
-}
-
-.responsibilities li {
-	font-size: 100%;
-    margin-bottom: 0;
-    line-height: 22px;
-    opacity: 0.6;
-}
-
-#home,#portfolio,#process {
+#home,#portfolio,#process,#values {
 	background: #3a3a3a;
 	color: #aaa;
 }
@@ -448,7 +460,8 @@ section#portfolio {
 	margin-right:1rem;
 }
 
-#portfolio section {
+#portfolio section,
+#values section {
 	padding-bottom: 2rem;
 	border-bottom: 1px solid #666;
 }
@@ -776,6 +789,10 @@ header .contactInfo {
 	.flex.two-up {
 		margin: 0;
 	}	
+
+	#pitch .flex-item {
+		margin:1rem;
+	}
 	
 	/* Widen masthead and social buttons to fill body padding */
 	.jumbotron {
@@ -885,8 +902,9 @@ header .contactInfo {
 	/* end teaser */
 
 	.two-up .flex-item {
-		margin-bottom: 2rem;;
+		margin-bottom: 2rem;
 	}
+
 
 	.two-up .caption {
 		display: none;
@@ -914,7 +932,8 @@ header .contactInfo {
 	}
 
 	.flex-container.bezel,
-	.flex-item.bezel {
+	.flex-item.bezel,
+	.flex-item {
 		padding: 0;
 		height: fit-content;
 		background-color: transparent;
