@@ -5,8 +5,7 @@
 -------------------------------------------------- */
 
 body > .navbar,
-#me footer,
-#portfolio footer {
+.footer {
 	font-size: 16px;
 	background: #222;
 }
@@ -24,16 +23,15 @@ body > .navbar,
 	padding: 10px 15px;
 }
 
-/* Body and structure
+/* Basic Layout
 -------------------------------------------------- */
 
 
 body {
   position: relative;
   background-repeat: repeat;
-  font-family: 'Source Sans Pro', "Verdana", sans-serif;
-  font-weight: 300;
-  font-size: 110%;
+  font-family:'Roboto Serif', serif;
+  line-height: unset;
 }
 
 .navbar,
@@ -44,45 +42,6 @@ footer {
 
 ul li {
   margin-bottom: 5px;
-}
-
-p,
-p.lead {
-	font-weight: 300;
-	font-size:140%;
-	line-height: 1.3em;
-}
-
-a {
-  color: #0099e5;
-}
-
-a:hover{
-  color: #0099e5;
-  text-decoration: underline;
-}
-
-#me h1,
-#me h2, 
-#portfolio h1, 
-.blog h1,
-.blog h2
- {
-	font-family: 'Source Sans Pro', "Verdana", sans-serif;
-}
-
-#portfolio img {
-	width: 97%;
-	display: block;
-	margin:30px auto 50px;
-	display: block;
-}
-
-
-.flex {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
 }
 
 .image-container {
@@ -96,112 +55,112 @@ a:hover{
 	margin:5px;
 }
 
-
-.flex-item {
-	flex: 0 1 auto;
+/* Baseline Typography
+-------------------------------------------------- */
+html {
+	font-size: 16px;
 }
 
-.quarter {
-	flex-basis: 25%;
+a {
+	color: #0099e5;
+  }
+  
+  a:hover{
+	color: #0099e5;
+	text-decoration: underline;
+  }
+
+p.lead {
+	font-size:1.4rem;
+} 
+
+p.caption {
+	font-size:1rem;
+	font-family: 'Inconsolata', monospace;
 }
 
-.third {
-	flex-basis: 33%;
+#objective p.lead {
+	font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 500;
 }
 
-
-.half {
-	flex-basis: 50%;
-}
-
-
-.h-centered {
-	justify-content: center;
-}
-
-.v-centered {
-	align-items: center;
-}
-
-#portfolio .intro-text {
-/*   margin-top:40px; */
-  margin-bottom:20px;
-}
-
-.intro-text h1 {
-	  font-size: 350%;
-	  line-height: 1.2em;
-	  margin-top: 0.25em;
+#pitch h1 {
+	margin-top: .25rem;
 }
 
 h1 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 220%;
+	font-size: 2rem;
 	text-transform: none;
 	text-decoration: none;
-	letter-spacing: -0.018em;
-	line-height: 1.1;
-	margin: 1.2em 0 0.3em 0;
+	line-height: 3rem;
+	margin: 1.2rem 0 0.3rem 0;
 }
 
 
 h2 {
 	font-style: normal;
-    font-weight: 500;
-    font-size: 80%;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.018em;
-    word-spacing: normal;
-    line-height: 0.5;
-    margin-bottom: 1em;
-    opacity: .5;
-}
-
-
-header h2 {
-	font-style: normal;
 	font-weight: 500;
-	font-size: 32px;
+	font-size: .8rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	letter-spacing: 0.018em;
-	word-spacing: 	normal;
-	line-height: 1.3;
-	margin-bottom: 0.5em;
+	letter-spacing: 0.018rem;
+	word-spacing: normal;
+	line-height: 1rem;
+	margin-bottom: 1rem;
+	opacity: .5;
 }
 
+
+/* Special Typography */
+
 .testimonial {
-	font-family: "museo-slab","Georgia",serif;
-	color:#FF5600;
-	font-weight: 300;
-	font-size: 110%;
-	line-height: 1.2em;
-	margin-top: 2em;
-	text-transform: none;
+	font-size: 1.6rem;
+    line-height: 2.5rem;
+	font-family: 'Roboto', sans-serif;
+    color: cornflowerblue;
+    font-weight: 500;
+    margin-top: 2rem;
+    text-transform: none;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 199, 0.81);
 }
 
 .attribution {
 	font-style: italic;
-	font-size: 110%;
-	line-height: 1.1em;
+	font-size: 1rem;
+	line-height: normal;
 }
 
 .annotation {
-	font-size: 100%;
+	font-size: 1rem;
 	line-height: normal;
-	margin-top:1em;
+	margin-top:1rem;
 	opacity: 0.6;
 }
 
-
-section {
-	margin:1em 0 4em 0;
+.emphasis {
+	color:cornflowerblue;
 }
 
-#me .section-header {
-	border-color: #33291B;
+.lead .emphasis {
+	color: inherit;
+}
+
+.ellipsis {
+	width:100%;
+	text-align: center;
+	font-size: 4rem;;
+}
+
+.one-up .caption {
+	width: 100%;
+	text-align: center;
+}
+
+.two-up .caption {
+	display: none;
 }
 
 .responsibilities {
@@ -215,155 +174,285 @@ section {
     opacity: 0.6;
 }
 
-.typekit-badge {
-	display: none !important;
+
+/* Images
+-------------------------------------------------- */
+
+img.flex-item {
+	flex-grow: 0;
+}
+
+.screen {
+	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: .5rem;
+    background: #333;
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    padding: .1rem;
+	justify-content: space-around;
+	display: flex;
+}
+
+.one-up .screenshot {
+	padding:0rem;
+}
+
+.illustration {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	background: #242424;
+	border: 2px solid #AAAAAA;
+	box-sizing: border-box;
+	border-radius: 25px;
+	padding:2px;
+}
+
+
+/* Flex Layout
+-------------------------------------------------- */
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-container {
+	justify-content: space-between;
+}
+
+.section-header .flex-container {
+	flex-flow:nowrap;
+}
+
+.flex-item {
+	flex: 0 1 auto;
+	position: relative;
+}
+
+#pitch .flex-item {
+	align-self: auto;
+}
+
+.main {
+	flex-shrink: 1;
+	height: fit-content;
+}
+
+.quarter {
+	flex-basis: 24%;
+}
+
+.threequarter {
+	flex-basis: 74%;
+}
+
+.third {
+	flex-basis: 32%;
+}
+
+
+.half {
+	flex-basis: 49%;
+}
+
+.two-up .flex-item {
+	flex-basis: 47%;
+}
+
+.twothird {
+	flex-basis: 66%
+}
+
+.flex.two-up {
+	margin: 2rem .5rem;
+}
+
+.fullwidth {
+	flex-basis: 100%;
+}
+
+
+.h-centered {
+	justify-content: center;
+}
+
+.v-centered {
+	align-items: center;
 }
 
 /* Page Specific
 -------------------------------------------------- */
 
-#portfolio {
+/* Home */
+
+#home {
 	background: #3a3a3a;
 	color: #aaa;
 }
 
-#me {
+#jumbotron .bezel {
+	border: 4px solid #AAAAAA;
+	box-sizing: border-box;
+	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
+	border-radius: 20px;
+	position: relative;
+	padding:2%;
+}
+
+#jumbotron #missionControl {
+	border-radius: 20px;
+	position: relative;
+	opacity: .4;
+}
+
+#jumbotron #tim {
+	position: absolute;
+	height:100%;
+	bottom: 0;
+	z-index: 2;
+}
+
+#jumbotron h1 {
+	position: absolute;
+	top:3rem;
+	right:.5rem;
+	width:50%;
+	z-index: 3;
+	font-size: 300%;
+	line-height: 120%;
+	font-weight: 600;
+	color:#F2F2F2;
+
+}
+
+#jumbotron h1 .newLines {
+	margin-bottom:  10%;
+
+}
+
+.flex-container.bezel,
+.flex-item.bezel {
+	padding: 0.5rem;
+    height: fit-content;
+    background-color: #545353;
+    border-radius: 1rem;
+    border: 3px solid #716e6e;
+    box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
+}
+
+.one-up .flex-item.bezel {
+	position: relative;
+	margin: 1rem 2rem;
+
+}
+
+/* Values */
+
+#values {
+	background: #ce8435;
+    color: #420101;
+}
+
+#values header img,
+#values section img {
+	align-self: flex-start;
+	flex-shrink: 1;
+	min-width: 0;
+	border-radius: 1em;
+	padding: 2px;
+	border:2px solid #420101;
+}
+
+#values h1 {
+	font-weight:600;
+	font-size: 2rem;
+}
+
+#values header,
+#values section {
+	border-bottom: 1px solid #42010144;
+}
+
+#values section a {
+	color:rgba(24, 24, 199, 0.81)
+}
+
+
+/* About */
+
+#about {
 	background: #816c23;
 	background-image: url("../img/floral_transparent.png");
 	color: #7D442B;
 }
 
-#me footer {
-	color: #666;
+#about .lead {
+	margin-top:1rem;
 }
 
-#me section {
-	margin-top:1em;
-}
-
-#me .lead {
-	margin-top:1em;
-}
-
-#portfolio h1 {
-/* 	color:#888; */
-}
-
-#me h1 {
-	color:#33291B;
-}
-
-#me header img {
-	margin: 30px auto;
-}
-
-#me img {
-	border-radius: 8px;
+#about header img,
+#about section img {
 	box-shadow: 0px 0px 10px 1px rgba(38,30,20,0.8);
 	margin-bottom: 30px
 }
 
-#me .text-caption {
-	font-size: 0.8em;
-	line-height: 1.2em;
+#about .caption {
+	text-align: right;
+	margin-bottom: 2em;
+}
+
+#about section a {
+	color:rgba(24, 24, 199, 0.81)
+}
+
+#about section {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 
 /* Sections
 -------------------------------------------------- */
 
-
-.screenshot {
-	box-shadow: 6px 6px 9px #222;
-	border-radius: 0 !important;
-	margin-top:5px;
-	margin-bottom:50px;
-}
-
 .section-body {
 	position: relative;
-	margin-top: 2em;
-/* 	margin-left: 10px; */
-}
-
-
-.logo {
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: auto;
+	margin-top: 2rem;
 }	
 
-
-/* section specific 
---------------------------- */
-#jut .logo {
-	background-image: url("../img/logo_jut.png");
-	height: 35px;
+section {
+	margin:1rem 0 3rem 0;
 }
 
-#qpharmetra .logo {
-	background-image: url("../img/logo_qpharmetra.png");
-	height: 35px;
+section:last-child {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
 }
 
-
-#predix .logo {
-	background-image: url("../img/logo_ge.png");
-	height: 47px;
+section#objective {
+	margin-top:4rem;
+	margin-bottom: 0;
 }
 
-#technicalApplication .logo {
-	background-image: url("../img/logo_akamai.png");
-	height: 61px;
+section#portfolio {
+	margin-left:1rem;
+	margin-right:1rem;
 }
 
-
-#visualSystem .logo {
-	background-image: url("../img/logo_jaspersoft.png");
-	height: 31px;	
+header,
+section {
+	padding-bottom: 2rem;
 }
 
-#ecommerce .logo {
-	background-image: url("../img/logo_apple.png");
-	height: 106px;	
-}
-
-#mobileApplication .logo {
-	background-image: url("../img/logo_pearson.png");
-	height: 48px;	
+#home section {
+	border-bottom: 1px solid #aaa;
 }
 
 
-#cca .logo {
-	background-image: url("../img/logo_cca.png");
-	height: 31px;
-}
-
-
-#serviceModel .logo {
-	background-image: url("../img/logo_schwab.png");
-	height: 32px;
-}
-
-#publicInterest .logo {
-	background-image: url("../img/logo_sfrecpark.png");
-	height: 106px;
-}
-
-
-#publicInterest #stewardship {
-	position: relative;
-	margin-left: 100px;
-	margin-top: -30px;
-}
-
-#publicInterest #whp {
-	position: relative;
-	margin-top: 50px;
-}
-
-#colophon {
-	font-size: smaller;
+section #pharsight {
+	border-bottom:none;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 section#colophon h1 {
@@ -376,56 +465,123 @@ section#colophon p, section#colophon li {
 }
 
 section#bridge {
-	padding-top:2em;
+	padding-top:2rem;
 }
 
-#cca img#video-thumbnail {
-	height: 315px;
-	width: 560px;
-	cursor: pointer;
+#about .section-header {
+	border-color: #33291B;
 }
 
-#containingBlock {
-  width:50%;
+#about section {
+	margin-top:1rem;
 }
 
-#videoWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top:20px;
+/* section specific 
+--------------------------- */
+.logo {
+	align-self: flex-start;
 }
 
-.videoWrapper iframe {
- 
+#salesforce img.logo {
+	width:150px;
+	height:105px;
 }
 
+#jut img.logo {
+	width:100px;
+	height:29px;
+}
+
+#jaspersoft img.logo {
+	width: 130px;
+	height:25px;	
+}
+
+#jaspersoft .screen {
+    padding: 10px;
+}
+
+#jaspersoft #special img {
+	border-radius: 0;
+}
+
+#jaspersoft #special>img {
+	margin-bottom: 1rem;
+}
+
+#jaspersoft #mirror {
+	flex-wrap: nowrap;
+}
+
+#jaspersoft #mirror img {
+	width:48%;
+}
+
+#akamai img.logo {
+	width:120px;
+	height:55px;
+}
+
+#ge img.logo {
+	width:105px;
+	height: 105px;
+}
+
+
+#apple img.logo {
+	width: 106px;
+	height: 131px;
+}
+
+#apple .bezel img {
+	height: auto;
+	width: 48%;
+	margin: .25rem;
+	align-self: start;
+	border-radius: .25rem;
+}
+
+
+#pharsight img.logo {
+	width: 169px;
+	height: 60px;
+}
+
+
+#salesforce #mobile {
+    position: absolute;
+    width: 15%;
+    bottom: 1.5rem;
+    right: 2rem;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+}
 
 /* Footer
 -------------------------------------------------- */
 
-#me .footer,
-#portfolio .footer {
-  margin-top: 70px;
-  padding: 10px 0 40px 0;
-}
-#me .footer p,
-#portfolio .footer p {
-  margin-bottom: 0;
-}
-.footer-links,
+footer {
+	padding: 10px 0 10px 0;
+	text-align:center;
+  }
+
+  .footer p {
+	margin-bottom: 0;
+  }
+
 .contactInfo {
-  font-weight:400;
-  margin: 0 0 5px 0;;
-}
-.footer-links li,
-.contactInfo li {
-  display: inline;
-  margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	font-weight:400;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-footer a:active,
-.contactInfo a:active {
+.contactInfo .flex-item {
+	margin: 0 8px 8px 0;
+	flex: 0 0 0;
+	max-height: 25px;
 }
 
 footer a:hover,
@@ -442,7 +598,7 @@ footer a,
 
 header .contactInfo {
 	margin-top: 25px;
-	font-size: .8em;
+	font-size: .8rem;
 	font-weight:400;
 }
 
@@ -450,6 +606,10 @@ header .contactInfo {
 
 /* Responsive
 -------------------------------------------------- */
+
+.teaser.mobile {
+	display:none;
+}
 
 /* Desktop large
 ------------------------- */
@@ -465,6 +625,15 @@ header .contactInfo {
 	}
 }
 
+/* tablet landscape 
+--------------------------------*/
+@media (min-width: 1024px) {
+	.container {
+		width: 900px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
 
 /* Desktop
 ------------------------- */
@@ -482,60 +651,58 @@ header .contactInfo {
     display: inline-block;
     margin: 5px;
   }
-
-  /* When affixed, space properly */
-  .bs-docs-sidenav {
-    top: 0;
-    margin-top: 30px;
-    margin-right: 0;
-  }
 }
 
 /* Tablet to desktop
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px) {
-  /* Remove any padding from the body */
+  /* Rremove any padding from the body */
+ html {
+	 font-size: 14px;
+ } 
+ 
   body {
     padding-top: 0;
+  }
+
+  .container {
+	width:700px;  
+	margin-left:1rem;
+	  margin-right: 1rem;
   }
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
     margin-top: -20px; /* Offset bottom margin on .navbar */
-  }
-  /* Adjust sidenav width */
-  .bs-docs-sidenav {
-    width: 166px;
-    margin-top: 20px;
-  }
-  .bs-docs-sidenav.affix {
-    top: 0;
   }
 }
 
 /* Tablet
 ------------------------- */
 @media (max-width: 767px) {
-  /* Remove any padding from the body */
+  /* Rremove any padding from the body */
 	body {
 		padding-top: 0;
 	}
-	
-	#portfolio {
-		background-color: #2a2a2a;
+
+	.third,
+	.twothird,
+	.half,
+	.two-up .flex-item  {
+		flex-basis: auto;
+	}
+
+	.flex-container {
+		align-items: center;
+		justify-content: center;
 	}
 	
-	.testimonial {
-		color:#ff7000;
-		font-size: 130%;
-	}
-	
-	.flex-item {
-		flex-basis: 49%;
-	}
-	
-	#portfolio img {
-		margin: 10px auto 20px;
+	.flex.two-up {
+		margin: 0;
 	}	
+
+	#pitch .flex-item {
+		margin:1rem;
+	}
 	
 	/* Widen masthead and social buttons to fill body padding */
 	.jumbotron {
@@ -544,126 +711,160 @@ header .contactInfo {
 		margin-right: -20px;
 		margin-left:  -20px;
 	}
-	.masthead h1 {
-		font-size: 90px;
+
+	#jumbotron h1 {
+		font-size: 150%;
+		font-weight: 500;
 	}
-	.masthead p,
-	.masthead .btn {
-		font-size: 24px;
-	}
-	.marketing .span4 {
-		margin-bottom: 40px;
-	}
-	.bs-docs-social {
-		margin: 0 -20px;
-	}
-	
-	/* Space out the show-grid examples */
-	.show-grid [class*="span"] {
-		margin-bottom: 5px;
-	}
-	
-	/* Sidenav */
-	.bs-docs-sidenav {
-		width: auto;
-		margin-bottom: 20px;
-	}
-	.bs-docs-sidenav.affix {
-		position: static;
-		width: auto;
-		top: 0;
-	}
-	
-	/* Unfloat the back to top link in footer */
-	.footer {
+
+	footer {
 		margin-left: -20px;
 		margin-right: -20px;
-		padding-left: 20px;
-		padding-right: 20px;
 	}
-	.footer p {
-		margin-bottom: 9px;
-	}		
 }
 
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
-  /* Remove padding above jumbotron */
-  body {
-    padding-top: 0;
-    font-size:85%;
-  }
+  
+	html {
+		font-size: 12px;
+	}	
+
+	body {
+	padding: 0;
+	}
+
+	.container {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+
+	#jumbotron .bezel {
+		border: 2px solid #aaa;
+		border-radius: 4px;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	#jumbotron .bezel img {
+		width:auto;
+		border-radius: 0;
+	}
+
+
+  /* change visible location of teaser */
+	.teaser.mobile {
+		display:block;
+		margin-top:20px;
+	}
+
+	.teaser.desktop {
+		display:none;
+	}
+
+	section#objective {
+		margin-top:1rem;
+		margin-bottom:1rem;
+	}
+
+	#objective p.lead {
+		font-size: 1.2rem;
+		line-height: 1.4;
+		margin-bottom: 2rem;
+	}
+
+	/* end teaser */
+
+	.two-up .flex-item {
+		margin-bottom: 2rem;
+	}
+
+
+	.two-up .caption {
+		display: none;
+	}
+
+	.section-header .flex-container {
+		flex-flow: wrap;
+	}
+
+
+	.screen {
+		border:none;
+		box-shadow:none;
+		padding:0;
+		background:none;
+		border-radius: 4px;
+		width:95%;
+		margin:auto;
+		box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
+	}
+
+	.testimonial {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+	}
+
+	.flex-container.bezel,
+	.flex-item.bezel,
+	.flex-item {
+		padding: 0;
+		height: fit-content;
+		background-color: transparent;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+	}
+
+	.one-up .flex-item.bezel {
+		margin:0 0 1.5rem 0;
+	}
+
+	#apple .bezel img {
+		width: auto;
+	}
+
+	#apple .screen img:last-child,
+	#salesforce #mobile {
+		display:none;
+	}
 
   /* Change up some type stuff */
-  h2 small {
-    display: block;
+  p.lead {
+	font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
   }
 
-  /* Downsize the jumbotrons */
-  .jumbotron h1 {
-    font-size: 60px;
-  }
-  .jumbotron p,
-  .jumbotron .btn {
-    font-size: 20px;
-  }
-  .jumbotron .btn {
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* center align subhead text like the masthead */
-  .subhead h1,
-  .subhead p {
-    text-align: center;
-  }
-
-  /* Marketing on home */
-  .marketing h1 {
-    font-size: 40px;
-  }
-
-  /* center example sites */
-  .example-sites {
-    margin-left: 0;
-  }
-  .example-sites > li {
-    float: none;
-    display: block;
-    max-width: 280px;
-    margin: 0 auto 18px;
-    text-align: center;
-  }
-  .example-sites .thumbnail > img {
-    max-width: 270px;
-  }
-
-  /* Do our best to make tables work in narrow viewports */
-  table code {
-    white-space: normal;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-
-  /* Modal example */
-  .modal-example .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-  }
-
-  /* Unfloat the back to top in footer to prevent odd text wrapping */
-  .footer .pull-right {
-    float: none;
-  }
 }
 
+/* Portrait phones
+------------------------- */
+@media (max-width: 375px) {
+
+	h1 {
+		font-size: 1.8rem;
+		line-height: 1.4;
+	}
+
+	#objective p.lead {
+		font-size: 1.2rem;
+		line-height: 1.6m;
+	}
+
+	.third,.twothird,.half,.cta {
+		flex-basis: 100%;
+	}
+
+}
 /* Utility
 ------------------------- */
 
 .newLines {
 	display: block;
+}
+
+.typekit-badge {
+	display: none !important;
 }
