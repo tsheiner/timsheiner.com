@@ -118,13 +118,13 @@ h2 {
 
 .testimonial {
 	font-size: 1.6rem;
-    line-height: 2.5rem;
+	line-height: 2.5rem;
 	font-family: 'Roboto', sans-serif;
-    color: cornflowerblue;
-    font-weight: 500;
-    margin-top: 2rem;
-    text-transform: none;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 199, 0.81);
+	color: #48b9ff;
+	font-weight: 500;
+	margin-top: 2rem;
+	text-transform: none;
+	text-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 199, 0.81);
 }
 
 .attribution {
@@ -223,6 +223,7 @@ img.flex-item {
 
 .section-header .flex-container {
 	flex-flow:nowrap;
+	gap: 1rem;
 }
 
 .flex-item {
@@ -322,8 +323,8 @@ img.flex-item {
 	font-size: 300%;
 	line-height: 120%;
 	font-weight: 600;
-	color:#F2F2F2;
-
+	color: #48b9ff;
+	text-shadow: 1px 1px 2px #363c48;
 }
 
 #jumbotron h1 .newLines {
@@ -357,7 +358,6 @@ img.flex-item {
 #values::before {    
 	content: "";
 	background-image: url('../img/values_background.png');
-	background-size:;
 	position: absolute;
 	top: 45px;
 	right: 0px;
@@ -517,16 +517,13 @@ section#bridge {
 	border-radius: 0;
 }
 
-#jaspersoft #special>img {
+#jaspersoft #special img {
 	margin-bottom: 1rem;
 }
 
 #jaspersoft #mirror {
 	flex-wrap: nowrap;
-}
-
-#jaspersoft #mirror img {
-	width:48%;
+	gap:0.5rem;
 }
 
 #akamai img.logo {
@@ -588,10 +585,13 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	gap: .5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .contactInfo .flex-item {
-	margin: 0 8px 8px 0;
+	/* margin: 0 8px 8px 0; */
 	flex: 0 0 0;
 	max-height: 25px;
 }
@@ -639,13 +639,19 @@ header .contactInfo {
 
 /* Desktop
 ------------------------- */
-@media (max-width: 980px) {
+@media (max-width: 1025px) {
   /* Unfloat brand */
   body > .navbar-fixed-top .brand {
     float: left;
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .container {
+	  width:auto;
+	  margin-left:1rem;
+	  margin-right: 1rem;
   }
 
   /* Inline-block quick links for more spacing */
@@ -668,10 +674,10 @@ header .contactInfo {
   }
 
   .container {
-	width:700px;  
+	width: auto;
 	margin-left:1rem;
-	  margin-right: 1rem;
-  }
+	margin-right: 1rem;
+	}
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
     margin-top: -20px; /* Offset bottom margin on .navbar */
@@ -715,7 +721,8 @@ header .contactInfo {
 	}
 
 	#jumbotron h1 {
-		font-size: 1.2rem;
+		/*here*/
+		font-size: 1.3rem;
 		font-weight: 500;
 	}
 
@@ -738,8 +745,8 @@ header .contactInfo {
 	}
 
 	.container {
-		margin-left: 0.75rem;
-		margin-right: 0.75rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	#jumbotron .bezel {
