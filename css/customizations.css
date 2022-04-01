@@ -350,8 +350,20 @@ img.flex-item {
 /* Values */
 
 #values {
-	background: #ce8435;
+	background: #bfb7d0;
     color: #420101;
+}
+
+#values::before {    
+	content: "";
+	background-image: url('../img/values_background.png');
+	background-size:;
+	position: absolute;
+	top: 45px;
+	right: 0px;
+	bottom: 53px;
+	left: 0px;
+	opacity: 0.1;
 }
 
 #values header img,
@@ -382,9 +394,9 @@ img.flex-item {
 /* About */
 
 #about {
-	background: #816c23;
+	background: #e27500;
 	background-image: url("../img/floral_transparent.png");
-	color: #7D442B;
+	color: #5a2c18;
 }
 
 #about .lead {
@@ -703,7 +715,7 @@ header .contactInfo {
 	}
 
 	#jumbotron h1 {
-		font-size: 150%;
+		font-size: 1.2rem;
 		font-weight: 500;
 	}
 
