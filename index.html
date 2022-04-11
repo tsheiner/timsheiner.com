@@ -83,23 +83,31 @@
 		
 	<div class="container">	
 
-	<!-- Jumbotron ================================================== -->
-		<header id="jumbotron">
-			<div class="flex-container flex">
-				<div class="flex-item bezel">
-					<h1>
-						<span class="newLines">Hi! </span>
-						<span class="newLines">I'm Tim Sheiner.</span>
-						<span class="newLines">I want to help you build your virtual mission control.</span>
-					</h1>
-					<img id="tim" src="img/me_jumbotron_small.png">
-					<img id="missionControl" class="screen" src="img/missionControl.jpg">
-				</div>
+
+	<header>
+		<div class="flex-container flex">
+			
+			<div class="flex-item threequarter">
+				<h1>My name is Tim Sheiner.</h1>
+				<p class="lead">I'm a veteran user experience designer with a background in physical product design & mechanical engineering.</p>
+				<p class="lead">My passion is creating interfaces that help people manage complex systems. I’ve designed for users of varying technical levels in many different domains. I excel at this work by meeting users where they are.</p>
+				
 			</div>
-		</header>
-	<!-- Pitch ================================================== -->
-		<section id="pitch">
-			<p class="lead">My passion is creating interfaces that help people manage complex systems. I’ve designed for users of varying technical levels in many different domains. I excel at this work by meeting users where they are.</p>
+			<div class="flex-item quarter">										
+				<img id="tim" src="img/me_jumbotron_small.png">
+			</div>
+		</div>
+		<h1>Objective</h1>
+
+		<p class="lead">I'm looking for fulltime leadership position with an experienced team working to operationalize a complex system management problem in the area of logistics, manufacturing, alternative energy or ecological health.</p>
+		<p class="lead">I will bring design craft to your organization and hit the ground running to build a team and develop a user experience strategy.  In addition to product design skills, I have expert-level understanding of system thinking, machine learning, networks, high scale compute, and biological systems. </p>
+
+		<h2 class="testimonial">"Tim has a special skill for taking apart a complex problem and putting it back together better than anyone I have known. When they are reassembled, even the most complex ideas will flow with new, compelling logic and clarity."</h2>
+		<p class="attribution">Mark Hovde, Senior Vice President, Marketing, Pharsight Corporation</p>
+	</header>	
+	<!-- <section id="pitch">
+
+			
 			<div class="flex-container flex two-up">						
 				<div class=" flex-item">
 					<p class="caption">Operations Dashboard</p>
@@ -124,13 +132,8 @@
 				</div>
 				
 			</div>
-			<h2 class="testimonial">"Tim has a special skill for taking apart a complex problem and putting it back together better than anyone I have known. When they are reassembled, even the most complex ideas will flow with new, compelling logic and clarity."</h2>
-			<p class="attribution">Mark Hovde, Senior Vice President, Marketing, Pharsight Corporation</p>
-			<p class="ellipsis">…</p>
-			<h1>Objective</h1>
-			<p class="lead">I'm looking for fulltime leadership position with an experienced team working to operationalize a complex system management problem in the area of <span class="emphasis">logistics</span>, <span class="emphasis">manufacturing</span>, <span class="emphasis">alternative energy</span> or <span class="emphasis">ecological health</span>.</p>
-			<p class="lead">I will bring design craft to your organization and hit the ground running to build a team and develop a user experience strategy.  In addition to <span class="emphasis">product design skills</span>, I have expert-level understanding of <span class="emphasis">system thinking</span>, <span class="emphasis">machine learning</span>, <span class="emphasis">networks</span>, <span class="emphasis">high scale compute</span>, and <span class="emphasis">biological systems</span>. </p>
-		</section>        
+			
+		</section>         -->
 <!-- Portfolio ================================================== -->
 			<h1>Portfolio</h1>	
 <!-- ================================================== -->		    	
@@ -144,7 +147,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-body">
+				<div class="modal-popup section-body">
 					<div class="flex-container flex one-up">
 						<div class="flex-item bezel">
 							<p class="caption">I used a visual storytelling approach to build consensus.</p>
@@ -183,45 +186,54 @@
 			</section>
 <!-- ================================================== -->	
 			<section id="jut">
-				<div class="section-header">		
+				
+				
+				<div class="wrap section-header">		
 					<div class="flex-container flex">
 						<img class="logo" src="img/logo_jut.png">
 						<div class=" flex-item">	
 							<h2>Streaming Analytics Platform</h2>		
 							<p class="lead">At this streaming data analytics start up I built a <span class="emphasis">design studio of 5</span> that executed <span class="emphasis">all design work</span> for <span class="emphasis">product</span> and <span class="emphasis">marketing</span>.</p>
 							<p class="lead">I acted as <span class="emphasis">player/coach</span> managing and growing my team, directing the overall creative output of my studio, leading detailed <span class="emphasis">design projects</span> and providing the executive team with <span class="emphasis">UX strategy</span>.</p>
+							<h2 class="testimonial">"Tim is a great designer and brings a broad set of skills to the product development process. At Jut, he built and effectively led a talented team of designers. He consistently challenged our product and development teams by asking the right questions, and had a great sense for when and where to innovate versus leveraging the state of the art. He can institute rigorous process when it matters and do more free form work when needed. Tim is fun to work with, and most important, he is a high-quality human being. I'd love to work with him again."</h2>
+							<p class="attribution">Steve McCanne, CEO & Founder at Jut</p>
+							
 						</div>
 					</div>
 				</div>
-				<div class="section-body">
-					<div class="flex-container flex one-up">
-						
-						<div class="flex-item bezel">
-							<p class="caption">Website for Product Led Growth</p>
-							<img  class="screen" src="img/jut_web.png">
-						</div>
-						<div class="flex-item bezel">
-							<p class="caption">Data Integration GUI</p>
-							<img  class="screen" src="img/jut_integrations.png">
-						</div>
-						<div class="flex-item bezel">
-							<p class="caption">Data Explorer</p>
-							<img  class="screen" src="img/jut_explorer.png">
-						</div>
-						<div class="flex-item bezel">
-							<p class="caption">Declarative Charting Syntax</p>
-							<img  class="screen" src="img/jut_doc.png">
+				<div class="details section-body">
+					<input id="details" type="checkbox" name="modal" tabindex="1">
+					<label for="details" >Jut Details</label>
+					<div class="details__overlay">
+						<div class="details__box">
+						<label for="details">&#10006;</label>
+							<div class="flex-container flex one-up">
+								
+								<div class="flex-item bezel">
+									<p class="caption">Website for Product Led Growth</p>
+									<img  class="screen" src="img/jut_web.png">
+								</div>
+								<div class="flex-item bezel">
+									<p class="caption">Data Integration GUI</p>
+									<img  class="screen" src="img/jut_integrations.png">
+								</div>
+								<div class="flex-item bezel">
+									<p class="caption">Data Explorer</p>
+									<img  class="screen" src="img/jut_explorer.png">
+								</div>
+								<div class="flex-item bezel">
+									<p class="caption">Declarative Charting Syntax</p>
+									<img  class="screen" src="img/jut_doc.png">
+								</div>
+							</div>
 						</div>
 					</div>							
 				</div>
 
-				<div class="section-footer">
-					<!-- <h2 class="testimonial">"Tim is a very talented designer and big picture system thinker who can tackle complex problems and map them to elegant user experiences and designs. Working with Tim, I learned a ton about how to integrate top notch design thinking into product development and I would be very pleased to have the chance to work with him again."</h2>
-					<p class="attribution">Michael Demmer, Vice President, Engineering at Jut</p> -->
-				
+				<!-- <div class="section-footer">			
 					<h2 class="testimonial">"Tim is a great designer and brings a broad set of skills to the product development process. At Jut, he built and effectively led a talented team of designers. He consistently challenged our product and development teams by asking the right questions, and had a great sense for when and where to innovate versus leveraging the state of the art. He can institute rigorous process when it matters and do more free form work when needed. Tim is fun to work with, and most important, he is a high-quality human being. I'd love to work with him again."</h2>
 					<p class="attribution">Steve McCanne, CEO & Founder at Jut</p>
-				</div>
+				</div> -->
 
 			</section>
 <!-- ================================================== --> 
@@ -235,7 +247,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-body">
+				<div class="modal-popup section-body">
 					<div class="flex-container flex one-up">
 						<div class="flex-item bezel">
 							<p class="caption">A standards-compliant, themeable UI for our white label business model.</p>
@@ -268,7 +280,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-body">
+				<div class="modal-popup section-body">
 					<div class="flex-container flex one-up">
 						
 						<div class="flex-item bezel">
@@ -312,7 +324,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-body">
+				<div class="modal-popup section-body">
 					<div class="flex-container flex bezel">
 						<div class="screen">
 							<img  class="flex-item" src="img/apple_search.png">
