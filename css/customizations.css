@@ -108,6 +108,7 @@
 
 .details__overlay .content .column {
 	width: 80%;
+	max-width:980px;
 	margin: 1rem auto 2rem auto;
 	text-align: left;
 	justify-content: flex-start;
