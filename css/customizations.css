@@ -36,7 +36,7 @@
   }
   
   .details > label:hover {
-	background: #000;
+	background: #f2f2f2; 
   }
 
   .details__overlay > label:hover {
@@ -87,7 +87,7 @@
   /* scrolling */
 
 .details__overlay header {
-	background-color: #000;
+	background-color: #f2f2f2; 
 	height:2.5rem;
 	padding: 0;
 	text-align: right;
@@ -288,13 +288,12 @@ h2 {
 
 .testimonial {
 	font-size: 1.6rem;
-	line-height: 2.5rem;
-	font-family: 'Roboto', sans-serif;
-	color: #48b9ff;
+	line-height: 2.2rem;
+	font-style: italic;
+	color: #0002d2;
 	font-weight: 500;
 	margin-top: 2rem;
 	text-transform: none;
-	text-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 199, 0.81);
 }
 
 .attribution {
@@ -396,7 +395,7 @@ img.flex-item {
 
 .section-header .flex-container {
 	flex-flow:nowrap;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .flex-item {
@@ -461,8 +460,8 @@ img.flex-item {
 /* Home */
 
 #home,#values,#about,.details__overlay {
-	background: #3a3a3a;
-	color: #aaa;
+	background: #FFF;
+	color: #555;
 }
 
 /* #jumbotron .bezel {
@@ -492,7 +491,7 @@ img.flex-item {
     border: 5px solid #aaa;
 	height: 200px;
 	width: 200px;
-	background-image: url(/img/me_jumbotron_small.png);
+	background-image: url(../img/me_jumbotron_small.jpg);
 	background-repeat: no-repeat;
 	background-position: top 10% right 45%;
 	background-size: 200%;
@@ -582,7 +581,7 @@ img.flex-item {
 
 #about header img,
 #about section img {
-	box-shadow: 0px 0px 10px 1px rgba(38,30,20,0.8);
+	box-shadow: 0px 5px 8px 1px rgba(38,30,20,0.3);
 	margin-bottom: 30px
 }
 
@@ -648,39 +647,34 @@ section#bridge {
 
 /* section specific 
 --------------------------- */
+
 .logo {
 	align-self: flex-start;
 }
 
 #salesforce img.logo {
-	width:150px;
-	height:105px;
+	width:130px;
 }
 
 #jut img.logo {
-	width:100px;
-	height:29px;
+	width:130px;
 }
 
 #jaspersoft img.logo {
 	width: 130px;
-	height:25px;	
 }
 
 #akamai img.logo {
-	width:120px;
-	height:55px;
+	width:130px;
 }
 
 #ge img.logo {
-	width:105px;
-	height: 105px;
+	width:130px;
 }
 
 
 #apple img.logo {
-	width: 106px;
-	height: 131px;
+	width: 130px;
 }
 
 
@@ -956,10 +950,10 @@ header .contactInfo {
 		box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
 	}
 
-	.testimonial {
+	/* .testimonial {
 		font-size: 1.2rem;
 		line-height: 1.5rem;
-	}
+	} */
 
 	.flex-container.bezel,
 	.flex-item.bezel,
