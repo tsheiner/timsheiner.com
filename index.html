@@ -56,7 +56,7 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse navbar-static-top">
+    <!-- <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -79,8 +79,44 @@
           </div>
         </div>
       </div>
-    </div>
-		
+    </div> -->
+
+<!-- slide element -->
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+	<div id="menuToggle">
+	  <!--
+	  A fake / hidden checkbox is used as click reciever,
+	  so you can use the :checked selector on it.
+	  -->
+	  <input id="toggle" type="checkbox" />
+	  
+	  <!--
+	  Some spans to act as a hamburger.
+	  
+	  They are acting like a real hamburger,
+	  not that McDonalds stuff.
+	  -->
+	 <label for="toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label> 
+	  
+	  <!--
+	  Too bad the menu has to be inside of the button
+	  but hey, it's pure CSS magic.
+	  -->
+	  <ul id="menu">
+		<a href="./index.html"><li>Work</li></a>
+		<a href="./values.html"><li>Values</li></a>
+		<a href="./about.html"><li>About</li></a>
+	  </ul>
+	</div>
+  </nav>
+<!--end slide -->	
 	<div class="container">	
 
 		<h1>Tim Sheiner</h1>
@@ -381,8 +417,8 @@
 
     <!-- Le javascript
     ================================================== -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/customizations.js"></script>
+    <script src="js/customizations.js"></script> -->
   </body>
 </html>
