@@ -15,9 +15,6 @@
  #menuToggle
  {
    display: block;
-   position: relative;
-   top: 50px;
-   left: 50px;
    z-index: 1;
    -webkit-user-select: none;
    user-select: none;
@@ -97,7 +94,7 @@
   * Ohyeah and the last one should go the other direction
   */
  
- /* #menuToggle input:checked ~ label span {
+ #menuToggle input:checked ~ label span {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
    background: #232323;
@@ -112,7 +109,7 @@
 
  #menuToggle input:checked ~ label span:nth-last-child(2){
    transform: rotate(-45deg) translate(0, -1px);
- } */
+ }
  
  /*
   * Make this absolute positioned
@@ -122,9 +119,8 @@
  {
    position: absolute;
    width: 100%;
-   /* margin: -100% 0; */
-   /* padding: 50px; */
-   /* padding-top: 125px; */
+   background-color:#000;
+   margin: 0;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
