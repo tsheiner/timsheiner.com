@@ -1,160 +1,156 @@
 /* Overrides for bootstrap defaults */
 
-/* /slide styles */
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
- 
- #menuToggle
- {
-   display: block;
-   z-index: 1;
-   -webkit-user-select: none;
-   user-select: none;
-   padding: 1rem 2rem;
-   background-color: #000;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #232323;
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: tomato;
- }
- 
- 
- #menuToggle input
- {
+/* navigation */
+
+.top-nav {
+	background-color: #000;
+	background-image: linear-gradient(to bottom, #222, #000);
+	width: 100%;
+	z-index: 3;
+  }
+  
+  .top-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+  }
+
+  .top-nav li {
+	  margin: 0;
+  }
+  
+  .top-nav li a {
+	display: block;
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+  }
+  
+  .top-nav li a:hover,
+  .top-nav .menu-btn:hover {
+	color:#fff;
+  }
+
+  .top-nav li.active {
+	color: #ffffff;
+	background-color: #111111;
+	background-image: linear-gradient(to bottom, #000, #222);
+}
+
+.top-nav li a {
+	color: #999999;
+	text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+
+.top-nav li.active a {
+	color: #ffffff;
+}
+  
+  /* menu */
+  
+  .top-nav .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .top-nav .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	padding: .75rem;
+	position: relative;
+	user-select: none;
+	margin:0;
+  }
+  
+  .top-nav .menu-icon .navicon {
+	background: #999;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+  }
+  
+  .top-nav .menu-icon .navicon:before,
+  .top-nav .menu-icon .navicon:after {
+	background: #999;
+	content: '';
+	display: block;
+	height: 100%;
 	position: absolute;
-  display: block;
-   width: 100px;
-   height: 100px;
-   
-   top: -7px;
-   left: -5px;
-    /* cursor: pointer; */
-   /* hide this */
-   /* and place it over the hamburger */
-   opacity: 0; 
-   z-index: 2; 
-   -webkit-touch-callout: none;
- }
+	transition: all .2s ease-out;
+	width: 100%;
+  }
+  
+  .top-nav .menu-icon .navicon:before {
+	top: 5px;
+  }
+  
+  .top-nav .menu-icon .navicon:after {
+	top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .top-nav .menu-btn {
+	display: none;
+  }
+  
+  .top-nav .menu-btn:checked ~ .menu {
+	max-height: 240px;
+  }
+  
+  .top-nav .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+  }
+  
+  .top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+  }
+  
+  .top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+  }
+  
+  .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+	.top-nav li {
+	  float: left;
+	}
+	.top-nav li a {
+	  padding: .75rem 2rem;
+	}
+	.top-nav .menu {
+	  clear: none;
+	  /* float: right; */
+	  max-height: none;
+	  width: 980px;
+	  margin:auto;
+	}
+	.top-nav .menu-icon {
+	  display: none;
+	}
+  }
+  
 
- #menuToggle label {
-	 /* position: absolute;
-	 right:2rem; */
-	 cursor: pointer;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   background: #cdcdcd;
-   border-radius: 3px;
-   z-index: 1;
-   /* transform-origin: 4px 0px;
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-			   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-			   opacity 0.55s ease; */
- }
- 
- /* #menuToggle label span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle label span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
-  */
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  * But let's hide the middle one.
-  * Ohyeah and the last one should go the other direction
-  */
- 
- #menuToggle input:checked ~ label span {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
-
- #menuToggle input:checked ~ label span:nth-last-child(3) {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
-
- #menuToggle input:checked ~ label span:nth-last-child(2){
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 100%;
-   background-color:#000;
-   margin: 0;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(0,-200px);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
-
-/* /slide styles */
-
+/* /navigation */
 
 /* Modal Stuff */
   
   .wrap { padding: 1em; }
+
   @media (min-width: 43.75em) {
-  
-  .wrap { padding: 2em; }
-  }
+	.wrap { padding: 2em; }
+	}
   
   @media (min-width: 43.75em) {
   
@@ -310,28 +306,6 @@
   }
 
 
-/* Tweak navbar brand link to be super sleek
--------------------------------------------------- */
-
-body > .navbar,
-.footer {
-	font-size: 16px;
-	background: #222;
-}
-
-.navbar {
-	min-height: 0;
-}
-
-.navbar-static-top {
-	margin-bottom: 20px;
-	width:auto;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-	padding: 10px 15px;
-}
-
 /* Basic Layout
 -------------------------------------------------- */
 
@@ -341,6 +315,7 @@ body {
   background-repeat: repeat;
   font-family:'Roboto Serif', serif;
   line-height: unset;
+  padding:0 !important;
 }
 
 .navbar,
@@ -1049,7 +1024,7 @@ header .contactInfo {
 
 
   /* change visible location of teaser */
-	.teaser.mobile {
+	/* .teaser.mobile {
 		display:block;
 		margin-top:20px;
 	}
@@ -1061,7 +1036,7 @@ header .contactInfo {
 	section#objective {
 		margin-top:1rem;
 		margin-bottom:1rem;
-	}
+	} */
 
 	/* #objective p.lead {
 		font-size: 1.2rem;
@@ -1099,11 +1074,6 @@ header .contactInfo {
 		margin:auto;
 		box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
 	}
-
-	/* .testimonial {
-		font-size: 1.2rem;
-		line-height: 1.5rem;
-	} */
 
 	.flex-container.bezel,
 	.flex-item.bezel,
