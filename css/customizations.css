@@ -242,6 +242,7 @@ p.lead {
 p.caption {
 	font-size:1rem;
 	font-family: 'Inconsolata', monospace;
+	color: #FFF;
 }
 
 #objective p.lead {
@@ -650,6 +651,7 @@ section#bridge {
 
 .logo {
 	align-self: flex-start;
+	opacity: 0.5;
 }
 
 #salesforce img.logo {
