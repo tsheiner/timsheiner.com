@@ -1,11 +1,8 @@
-/* Overrides for bootstrap defaults */
-
 /* navigation */
 
 .top-nav {
 	background-color: #000;
 	background-image: linear-gradient(to bottom, #222, #000);
-	/* width: 100%; */
 	z-index: 3;
   }
   
@@ -132,7 +129,6 @@
 	}
 	.top-nav .menu {
 	  clear: none;
-	  /* float: right; */
 	  max-height: none;
 	  width: 980px;
 	  margin:auto;
@@ -317,6 +313,7 @@ body {
   font-family:'Roboto Serif', serif;
   line-height: unset;
   padding:0 !important;
+  margin:0 !important;
 }
 
 .navbar,
