@@ -1,3 +1,5 @@
+/* Overrides for bootstrap defaults */
+
 /* navigation */
 
 .top-nav {
@@ -130,6 +132,7 @@
 	}
 	.top-nav .menu {
 	  clear: none;
+	  /* float: right; */
 	  max-height: none;
 	  width: 980px;
 	  margin:auto;
@@ -314,8 +317,6 @@ body {
   font-family:'Roboto Serif', serif;
   line-height: unset;
   padding:0 !important;
-  margin:0 !important;
-  font-size: 14px;
 }
 
 .navbar,
@@ -368,13 +369,8 @@ a {
 	text-decoration: underline;
   }
 
-  p {
-	  margin:0 0 10px;
-  }
-
 p.lead {
 	font-size:1.4rem;
-	margin-bottom:20px;
 } 
 
 p.caption {
@@ -488,12 +484,6 @@ h2 {
 
 /* Images
 -------------------------------------------------- */
-
-img {
-	height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-}
 
 img.flex-item {
 	flex-grow: 0;
@@ -609,6 +599,21 @@ img.flex-item {
 	color: #555;
 }
 
+/* #jumbotron .bezel {
+	border: 4px solid #AAAAAA;
+	box-sizing: border-box;
+	box-shadow: inset 4px 8px 16px rgba(12, 11, 11, 0.38);
+	border-radius: 20px;
+	position: relative;
+	padding:2%;
+}
+
+#jumbotron #missionControl {
+	border-radius: 20px;
+	position: relative;
+	opacity: .4;
+} */
+
 #tim:before {
     content: '';
     display: block;
@@ -628,6 +633,24 @@ img.flex-item {
 	margin:0 auto;
 	height: auto;
 }
+
+/* #jumbotron h1 {
+	position: absolute;
+	top:3rem;
+	right:.5rem;
+	width:50%;
+	z-index: 3;
+	font-size: 300%;
+	line-height: 120%;
+	font-weight: 600;
+	color: #48b9ff;
+	text-shadow: 1px 1px 2px #363c48;
+}
+
+#jumbotron h1 .newLines {
+	margin-bottom:  10%;
+
+} */
 
 .flex-container.bezel,
 .flex-item.bezel {
@@ -812,11 +835,7 @@ section#bridge {
 footer {
 	padding: 10px 0 10px 0;
 	text-align:center;
-<<<<<<< HEAD:css/styles.css
-	background-color: #000;
-=======
 	background-color:#000;
->>>>>>> master:css/customizations.css
   }
 
   .footer p {
@@ -836,6 +855,7 @@ footer {
 }
 
 .contactInfo .flex-item {
+	/* margin: 0 8px 8px 0; */
 	flex: 0 0 0;
 	max-height: 25px;
 }
@@ -951,6 +971,19 @@ header .contactInfo {
 		margin:1rem;
 	}
 	
+	/* Widen masthead and social buttons to fill body padding */
+	.jumbotron {
+		padding: 40px 20px;
+		margin-top:   -20px; /* Offset bottom margin on .navbar */
+		margin-right: -20px;
+		margin-left:  -20px;
+	}
+
+	#jumbotron h1 {
+		/*here*/
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
 
 	footer {
 		margin-left: -20px;
@@ -973,6 +1006,8 @@ header .contactInfo {
 	#tim {
 		width:150px;
 	}
+
+	/* end teaser */
 
 	.two-up .flex-item {
 		margin-bottom: 2rem;
