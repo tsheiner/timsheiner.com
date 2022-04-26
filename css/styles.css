@@ -812,7 +812,11 @@ section#bridge {
 footer {
 	padding: 10px 0 10px 0;
 	text-align:center;
+<<<<<<< HEAD:css/styles.css
 	background-color: #000;
+=======
+	background-color:#000;
+>>>>>>> master:css/customizations.css
   }
 
   .footer p {
