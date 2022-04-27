@@ -1,11 +1,8 @@
-/* Overrides for bootstrap defaults */
-
 /* navigation */
 
 .top-nav {
 	background-color: #000;
 	background-image: linear-gradient(to bottom, #222, #000);
-	width: 100%;
 	z-index: 3;
   }
   
@@ -63,6 +60,7 @@
 	position: relative;
 	user-select: none;
 	margin:0;
+	top:2px;
   }
   
   .top-nav .menu-icon .navicon {
@@ -131,7 +129,6 @@
 	}
 	.top-nav .menu {
 	  clear: none;
-	  /* float: right; */
 	  max-height: none;
 	  width: 980px;
 	  margin:auto;
@@ -316,6 +313,7 @@ body {
   font-family:'Roboto Serif', serif;
   line-height: unset;
   padding:0 !important;
+  margin:0 !important;
 }
 
 .navbar,
@@ -339,9 +337,19 @@ ul li {
 	margin:5px;
 }
 
-.details-popup {
-	display: none;
+.container {
+	width:980px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+@media (min-width:280px)  { /* nothing */.container {width:220px;} }
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */.container {width:310px;} }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ .container {width:470px;} }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ .container {width: 608px;} }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ .container {width:740px;} }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ .container {width:980px;} }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ .container {width:980px;} }
 
 /* Baseline Typography
 -------------------------------------------------- */
@@ -473,6 +481,12 @@ h2 {
 
 /* Images
 -------------------------------------------------- */
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
 
 img.flex-item {
 	flex-grow: 0;
@@ -901,11 +915,6 @@ header .contactInfo {
     padding-right: 10px;
   }
 
-  .container {
-	  width:auto;
-	  margin-left:1rem;
-	  margin-right: 1rem;
-  }
 
   /* Inline-block quick links for more spacing */
   .quick-links li {
@@ -926,15 +935,6 @@ header .contactInfo {
     padding-top: 0;
   }
 
-  .container {
-	width: auto;
-	margin-left:1rem;
-	margin-right: 1rem;
-	}
-  /* Widen masthead and social buttons to fill body padding */
-  .jumbotron {
-    margin-top: -20px; /* Offset bottom margin on .navbar */
-  }
   .threequarter {
 	flex-basis: auto;
 }
@@ -1005,45 +1005,6 @@ header .contactInfo {
 	body {
 	padding: 0;
 	}
-
-	.container {
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-
-	#jumbotron .bezel {
-		border: 2px solid #aaa;
-		border-radius: 4px;
-		box-shadow: none;
-		padding: 0;
-	}
-
-	#jumbotron .bezel img {
-		width:auto;
-		border-radius: 0;
-	}
-
-
-  /* change visible location of teaser */
-	/* .teaser.mobile {
-		display:block;
-		margin-top:20px;
-	}
-
-	.teaser.desktop {
-		display:none;
-	}
-
-	section#objective {
-		margin-top:1rem;
-		margin-bottom:1rem;
-	} */
-
-	/* #objective p.lead {
-		font-size: 1.2rem;
-		line-height: 1.4;
-		margin-bottom: 2rem;
-	} */
 
 	#tim {
 		width:150px;
