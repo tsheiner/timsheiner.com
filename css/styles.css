@@ -386,7 +386,8 @@ a {
 
 p.lead {
 	font-size:1.4rem;
-line-height: 1.6;} 
+line-height: 1.6;
+} 
 
 p.lead + ul {
 	padding-inline-start: 1rem;
