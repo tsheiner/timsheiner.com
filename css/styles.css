@@ -1,6 +1,6 @@
 /* temp */
 
-#salesforce .details__overlay {
+/* #salesforce .details__overlay {
 
 
 opacity: 1;
@@ -12,7 +12,7 @@ transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
 z-index: 800;
 display: flex;
 flex-direction: column;
-}
+} */
 
 
 /* navigation */
@@ -266,8 +266,8 @@ flex-direction: column;
 }
 
 .details__overlay .content .column {
-	/* width: 90%; */
-	/* max-width:980px; */
+	width: 90%;
+	max-width:980px;
 	margin: 1rem auto 2rem auto;
 	/* text-align: left;
 	justify-content: flex-start; */
@@ -442,13 +442,33 @@ h2 {
 
 h3 {
 	margin-bottom: 0;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 h3 + p.lead {
 	margin-top: .5rem;
 }
 
+dl {
+	font-size: 1.2rem;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+dt, dd {
+	margin-inline-start: 1.5rem;
+}
+
+dd {
+	font-style: italic;
+}
+
+dd > .bezel {
+	margin-inline-start: 0;
+	font-style: normal;
+}
 
 /* Special Typography */
 
@@ -1055,7 +1075,7 @@ header .contactInfo {
 		border-radius: 4px;
 		width:95%;
 		margin:auto;
-		box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
+		box-shadow: .25rem .25rem .75rem rgb(33 33 33 / 50%);
 	}
 
 	/* .flex-container.bezel,
