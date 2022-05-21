@@ -1,6 +1,6 @@
 /* temp */
 
-/* #salesforce .details__overlay {
+#jut .details__overlay {
 
 
 opacity: 1;
@@ -12,7 +12,7 @@ transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
 z-index: 800;
 display: flex;
 flex-direction: column;
-} */
+}
 
 
 /* navigation */
@@ -255,11 +255,11 @@ flex-direction: column;
     overflow-y: auto;
 }
 
-.details__overlay .content. .container {
-	height: 100%;
+.details__overlay .content .container {
+	/* height: 100%;
     padding: 0;
     margin: 0;
-	text-align: left;
+	text-align: left; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -547,7 +547,22 @@ img.flex-item {
 	flex-grow: 0;
 }
 
-.screen {
+.bezel {
+	padding: 0.5rem;
+    height: fit-content;
+    background-color: #545353;
+    border-radius: 1rem;
+    border: 3px solid #716e6e;
+    box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
+}
+
+.bezel {
+	position: relative;
+	margin: 1rem 2rem;
+
+}
+
+.bezel.screen img {
 	box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: .5rem;
     background: #333;
@@ -558,11 +573,21 @@ img.flex-item {
 	display: flex;
 }
 
-.one-up .screenshot {
-	padding:0rem;
+.wrapper {
+	justify-content: space-around;
+	display: flex;
 }
 
-.illustration {
+.bezel.illustration img  {
+	border-radius: .25rem;
+	width:98%;
+	margin: 0 auto;
+	padding: .1rem;
+	background: #333;
+}
+
+
+/* .illustration {
 	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	background: #242424;
@@ -570,7 +595,7 @@ img.flex-item {
 	box-sizing: border-box;
 	border-radius: 25px;
 	padding:2px;
-}
+} */
 
 
 /* Flex Layout
@@ -677,41 +702,7 @@ img.flex-item {
 	height: auto;
 }
 
-/* #jumbotron h1 {
-	position: absolute;
-	top:3rem;
-	right:.5rem;
-	width:50%;
-	z-index: 3;
-	font-size: 300%;
-	line-height: 120%;
-	font-weight: 600;
-	color: #48b9ff;
-	text-shadow: 1px 1px 2px #363c48;
-}
 
-#jumbotron h1 .newLines {
-	margin-bottom:  10%;
-
-} */
-
-/* .flex-container.bezel,
-.flex-item.bezel  */
-.bezel {
-	padding: 0.5rem;
-    height: fit-content;
-    background-color: #545353;
-    border-radius: 1rem;
-    border: 3px solid #716e6e;
-    box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
-}
-
-/* .one-up .flex-item.bezel, */
-.bezel {
-	position: relative;
-	margin: 1rem 2rem;
-
-}
 
 /* Values */
 
@@ -1078,6 +1069,13 @@ header .contactInfo {
 		margin:auto;
 		box-shadow: .25rem .25rem .75rem rgb(33 33 33 / 50%);
 	}
+
+	.bezel > * img {
+		border-radius: 4px;
+		width:95%;
+		margin:auto;
+	}
+
 
 	/* .flex-container.bezel,
 	.flex-item.bezel, */
