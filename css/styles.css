@@ -222,6 +222,25 @@
     box-shadow: 0rem 0rem 1.5rem .5rem rgb(33 33 33 / 50%);
 }
 
+.lightbox {
+    background: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #999;
+    border-radius: 8px;
+    position: fixed;
+    z-index: -800;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
 input:checked~.details__overlay {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -232,6 +251,18 @@ input:checked~.details__overlay {
     z-index: 800;
     display: flex;
     flex-direction: column;
+}
+
+input:checked~.lightbox {
+    opacity: .4;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 700;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 

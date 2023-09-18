@@ -67,18 +67,13 @@
                             <img class="logo" src="img/logo_union.png">
                             <div class="flex-item">
                                 <h2>Workflow Orchestration Platform</h2>
-                                <p class="lead">At this start up I deepened my knowledge of Kubernetes and distributed systems while </p>
-                                    <ul>
-                                        <li>delivering a visual and navigational refresh of the interface</li>
-                                        <li>running several user research programs</li>
-                                        <li>creating a new Experience Strategy for the company that included design personas, prioritized Jobs To Be Done, and a "Northstar" prototype</li>
-                                    </ul> 
+                                <p class="lead">At this start up I delivered a visual and navigational refresh of the interface, ran several user research programs and created a complete Experience Strategy including design personas, prioritized Jobs To Be Done, and a "Northstar" prototype.</p>
                                 
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <input id="details-union" type="checkbox" name="modal" tabindex="1">
+                        <input id="details-union" type="checkbox" checked name="modal" tabindex="1">
                         <label for="details-union"><img class="expand" src="img/expand-svgrepo-com.svg" /> View my work at Union</label>
                         <div class="details__overlay container">
                             <header> <div class="column"><label for="details-union">Close</label></div></header>
@@ -104,9 +99,14 @@
                             </div>
 
                         </div>
+                        <div id="lightbox" ="lightbox" onclick="clearDetails()"></div>
                     </div>
                 </section>
-
+                <script>
+                    // function clearDetails() {
+                    //     document.getElementById("details-union").checked = false
+                    // }
+                </script>
         <!-- ================================================== -->
         <section id="salesforce">
             <div class="section-header">
@@ -245,6 +245,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="lightbox"></div>
             </div>
         </section>
         <!-- ================================================== -->
