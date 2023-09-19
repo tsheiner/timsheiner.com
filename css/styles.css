@@ -298,7 +298,7 @@ input:checked~.lightbox {
 }
 
 .details__overlay p.lead {
-    font-size: 1.0rem;
+    /* font-size: 1.0rem; */
 }
 
 .details__overlay .logo {
@@ -317,7 +317,7 @@ input:checked~.lightbox {
     right: 2rem;
 }
 
-@media (min-height: 37.5em) {
+/* @media (min-height: 37.5em) {
     .details_switch {
         -webkit-transform: translate(-50%, -80%);
         -ms-transform: translate(-50%, -80%);
@@ -325,7 +325,7 @@ input:checked~.lightbox {
     }
 }
 
-@media (min-width: 50em) {}
+@media (min-width: 50em) {} */
 
 .details_switch h2 {
     color: #FFDE16;
@@ -387,54 +387,6 @@ ul li {
     flex-direction: column;
 }
 
-@media (min-width:280px) {
-    /* nothing */
-    .container {
-        width: 220px;
-    }
-}
-
-@media (min-width:320px) {
-    /* smartphones, iPhone, portrait 480x320 phones */
-    .container {
-        width: 310px;
-    }
-}
-
-@media (min-width:481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    .container {
-        width: 470px;
-    }
-}
-
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    .container {
-        width: 608px;
-    }
-}
-
-@media (min-width:961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .container {
-        width: 740px;
-    }
-}
-
-@media (min-width:1025px) {
-    /* big landscape tablets, laptops, and desktops */
-    .container {
-        width: 980px;
-    }
-}
-
-@media (min-width:1281px) {
-    /* hi-res laptops and desktops */
-    .container {
-        width: 980px;
-    }
-}
 
 
 /* Baseline Typography
@@ -454,7 +406,7 @@ a:hover {
 }
 
 p.lead {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     line-height: 1.6;
 }
 
@@ -541,8 +493,8 @@ dd>.bezel {
 /* Special Typography */
 
 .testimonial {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     font-style: italic;
     color: #0002d2;
     font-weight: 500;
@@ -695,6 +647,7 @@ section {
 .flex-item {
     flex: 0 1 auto;
     position: relative;
+    /* flex-grow: 1; */
 }
 
 #pitch .flex-item {
@@ -771,14 +724,12 @@ section {
 #tim {
     border-radius: 50%;
     border: 5px solid #aaa;
-    height: 200px;
     width: 200px;
     background-image: url(../img/me_jumbotron_small.jpg);
     background-repeat: no-repeat;
     background-position: top 10% right 45%;
     background-size: 200%;
     margin: 0 auto;
-    height: auto;
 }
 
 
@@ -786,8 +737,6 @@ section {
 
 
 /* How to include background pattern */
-
-
 /*#values::before {    
 	content: "";
 	background-image: url('../img/values_background.png');
@@ -953,130 +902,50 @@ header .contactInfo {
 /* Responsive
 -------------------------------------------------- */
 
-.teaser.mobile {
-    display: none;
-}
-
-
-/* Desktop large
-------------------------- */
-
-@media (min-width: 1200px) {
-    .bs-docs-container {
-        max-width: 970px;
+@media screen and (max-width: 480px) {
+/* Styles for mobile portrait */    
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
     }
-    .bs-docs-sidenav {
-        width: 258px;
-    }
-    .container,
-    .navbar-static-top .container,
-    .navbar-fixed-top .container,
-    .navbar-fixed-bottom .container,
-    .span12 {
-        width: 980px;
-    }
-}
-
-
-/* Desktop
-------------------------- */
-
-@media (max-width: 1025px) {
-    /* Unfloat brand */
-    body>.navbar-fixed-top .brand {
-        float: left;
-        margin-left: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    /* Inline-block quick links for more spacing */
-    .quick-links li {
-        display: inline-block;
-        margin: 5px;
-    }
-}
-
-
-/* Tablet to desktop
-------------------------- */
-
-@media (min-width: 768px) and (max-width: 980px) {
-    /* Rremove any padding from the body */
-    html {
-        font-size: 14px;
-    }
-    body {
-        padding-top: 0;
-    }
-    .threequarter {
-        flex-basis: auto;
-    }
-}
-
-
-/* Tablet
-------------------------- */
-
-@media (max-width: 767px) {
-    /* Rremove any padding from the body */
-    body {
-        padding-top: 0;
+    #objective p.lead {
+        font-size: 1.2rem;
+        line-height: 1.6m;
     }
     .third,
     .twothird,
     .half,
     .quarter,
     .threequarter,
-    .two-up .flex-item {
+    .cta {
         flex-basis: auto;
     }
-    #avatar {
-        flex-basis: 100%;
+    .container {
+        width: 80%;
     }
-    .flex-container {
-        align-items: center;
-        /* justify-content: center; */
+    
+    .details__overlay {
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        border-radius: 0;
+        width: 100%;
     }
-    .flex.two-up {
-        margin: 0;
-    }
-    #pitch .flex-item {
-        margin: 1rem;
-    }
-    /* Widen masthead and social buttons to fill body padding */
-    .jumbotron {
-        padding: 40px 20px;
-        margin-top: -20px;
-        /* Offset bottom margin on .navbar */
-        margin-right: -20px;
-        margin-left: -20px;
-    }
-    #jumbotron h1 {
-        /*here*/
-        font-size: 1.3rem;
-        font-weight: 500;
-    }
-    footer {
-        margin-left: -20px;
-        margin-right: -20px;
+    .flex {
+        display: block;
     }
 }
 
-
-/* Landscape phones
-------------------------- */
-
-@media (max-width: 480px) {
-    html {
-        font-size: 12px;
-    }
+@media screen and (max-width: 979px) {
+/* Styles for mobile landscape and small tablets */
     body {
         padding: 0;
     }
-    #tim {
-        width: 150px;
+
+    .details>label {
+        margin-left: 0;
     }
-    /* end teaser */
     .two-up .flex-item {
         margin-bottom: 2rem;
     }
@@ -1101,8 +970,7 @@ header .contactInfo {
         width: 95%;
         margin: auto;
     }
-    /* .flex-container.bezel,
-	.flex-item.bezel, */
+
     .bezel,
     .flex-item {
         padding: 0;
@@ -1112,7 +980,7 @@ header .contactInfo {
         border: none;
         box-shadow: none;
     }
-    /* .one-up .flex-item.bezel, */
+
     .bezel {
         margin: 0 0 1.5rem 0;
     }
@@ -1123,27 +991,58 @@ header .contactInfo {
     #salesforce #mobile {
         display: none;
     }
-}
-
-
-/* Portrait phones
-------------------------- */
-
-@media (max-width: 375px) {
-    h1 {
-        font-size: 1.8rem;
-        line-height: 1.4;
-    }
-    #objective p.lead {
-        font-size: 1.2rem;
-        line-height: 1.6m;
-    }
     .third,
     .twothird,
     .half,
+    .threequarter,
     .cta {
         flex-basis: 100%;
     }
+    .details__overlay {
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .container {
+        width:90%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+/* Styles for tablet landscape and small desktops */
+    body {
+        padding-top: 0;
+    }
+    .container {
+        width:90%;
+    }
+
+    #avatar {
+        flex-basis: 100%;
+    }
+    .flex-container {
+        align-items: center;
+
+    }
+    .flex.two-up {
+        margin: 0;
+    }
+    #pitch .flex-item {
+        margin: 1rem;
+    }
+
+    footer {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+/* Styles for desktop and larger screens */
 }
 
 
