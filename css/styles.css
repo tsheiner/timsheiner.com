@@ -306,7 +306,6 @@ input:checked~.lightbox {
 }
 
 .details__overlay .content .bezel {
-    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -417,8 +416,9 @@ p.lead+ul {
 p.caption {
     font-size: 1rem;
     font-family: 'Inconsolata', monospace;
-    color: #FFF;
+    /* color: #FFF; */
     margin: 0 auto 0.5rem auto;
+    width:100%;
 }
 
 #objective p.lead {
@@ -537,11 +537,6 @@ dd>.bezel {
     margin-right: 5px
 }
 
-.one-up .caption {
-    width: 100%;
-    text-align: center;
-}
-
 .responsibilities {
     margin: 0 0 20px 20px;
 }
@@ -568,23 +563,23 @@ img.flex-item {
 }
 
 .bezel {
-    padding: 0.5rem;
     height: fit-content;
     position: relative;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
-.bezel.illustration {
-    border-radius: .5rem;
-    background: #f3f3f3;
-    border-radius: 0.2rem;
+.bezel img {
+    margin-bottom: 1rem;
 }
+
+
+
+/* .bezel.illustration {
+
+} */
 
 .bezel.illustration img {
-    border-radius: .5rem;
-    width: 98%;
-    margin: 0 auto;
-    padding: .1rem;
+    border:1px solid #ccc;
 }
 
 .illustration .caption {
@@ -593,20 +588,22 @@ img.flex-item {
     margin: .5rem auto 1rem auto;
 }
 
-.bezel.screen {
-    background-color: #545353;
-    border-radius: 1rem;
-    border: 3px solid #716e6e;
-    box-shadow: 1rem 1rem 1rem rgb(33 33 33 / 50%);
-}
-
 .bezel.screen img {
-    border-radius: .5rem;
+    /* border-radius: .5rem;
     border: 1px solid #a3a3a3;
     box-sizing: border-box;
-    padding: .1rem;
+    padding: .1rem; */
     justify-content: space-around;
     display: flex;
+    box-shadow: 0rem 0rem 1rem rgb(33 33 33 / 50%);
+}
+
+.screen .caption {
+    color: inherit;
+    /* position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%); */
 }
 
 .wrapper {
@@ -935,6 +932,8 @@ header .contactInfo {
     .flex {
         display: block;
     }
+
+    .
 }
 
 @media screen and (max-width: 979px) {
@@ -955,16 +954,7 @@ header .contactInfo {
     .section-header .flex-container {
         flex-flow: wrap;
     }
-    .screen {
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        background: none;
-        border-radius: 4px;
-        width: 95%;
-        margin: auto;
-        box-shadow: .25rem .25rem .75rem rgb(33 33 33 / 50%);
-    }
+
     .bezel>* img {
         border-radius: 4px;
         width: 95%;
@@ -981,9 +971,9 @@ header .contactInfo {
         box-shadow: none;
     }
 
-    .bezel {
-        margin: 0 0 1.5rem 0;
-    }
+    /* .bezel {
+        
+    } */
     #apple .bezel img {
         width: auto;
     }
