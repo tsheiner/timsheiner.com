@@ -251,6 +251,7 @@ input:checked~.details__overlay {
     z-index: 800;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1.5rem;
 }
 
 input:checked~.lightbox {
