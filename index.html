@@ -19,6 +19,9 @@
     <!-- styles -->
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- javascript -->
+    <script src="js/scripts.js"></script>
+
 </head>
 
 <body id="home">
@@ -67,13 +70,13 @@
                             <img class="logo" src="img/logo_union.png">
                             <div class="flex-item">
                                 <h2>Workflow Orchestration Platform</h2>
-                                <p class="lead">At this start up I delivered a visual and navigational refresh of the interface, ran several user research programs and created a complete Experience Strategy including design personas, prioritized Jobs To Be Done, and a "Northstar" prototype.</p>
+                                <p class="lead">During my short time at this start up I delivered a visual and navigational refresh of the interface, ran several user research programs and created a complete Experience Strategy including design personas, prioritized Jobs To Be Done, and a "Northstar" prototype.</p>
                                 
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <input id="details-union" type="checkbox" checked name="modal" tabindex="1">
+                        <input id="details-union" type="checkbox" name="modal" tabindex="1">
                         <label for="details-union"><img class="expand" src="img/expand-svgrepo-com.svg" /> View my work at Union</label>
                         <div class="details__overlay container">
                             <header> <div class="column"><label for="details-union">Close</label></div></header>
@@ -81,32 +84,66 @@
                                 <div class="column">
                                     <h2>Workflow Orchestration Platform</h2>
                                     <img class="logo" src="img/logo_union.png">
-                                    <p class="lead">When I arrived at Union I began tactical and strategic initiatives simultaneously. On the tactical side, I observed that their user interface had a number of obvious problems:
-                                        <ul>
-                                            <li></li>
-                                        </ul>
+                                    <p class="lead">Union is a commercial open source play founded by the creators of the <a href="https://flyte.org">Flyte</a> orchestration platform. What I found when I arrived was a sadly confused user experience: a truly great orchestration platform hidden behind two (!) inconsistent CLIs and an awkward, unattractive GUI. 
                                     </p>
-                                    <div class="bezel illustration">
-                                        <!-- <p class="caption">The Union UI before I launched a refresh.</p> -->
+                                    <div class="bezel screen">
+                                        <p class="caption">The Union UI before I launched a refresh.</p>
                                         <img src="img/union_before.png">
                                     </div>
-                                    <p class="lead">When I arrived</p>
-                                    <div class="bezel illustration">
-                                        <p class="caption">UI after the refresh work.</p>
+                                    <h3>Step One: Show UX Progress ASAP</h3>
+                                    <p class="lead">My first priority was a GUI-only upgrade with 4 objectives:
+                                        <ul>
+                                            <li>improve the use of whitespace</li>
+                                            <li>bring the layout and appearance inline with <i>de facto</i> developer console standards</li>
+                                            <li>align the product branding with the marketing website</li>
+                                            <li>improve accessibility and navigation with a standard page header and breadcrumbs on every page</li>
+                                        </ul>
+                                        <p class="lead">When we released the GUI refresh half of the existing customers reached out unsolicited to communicate their delight with the changes!</p>  
+                                    <div class="bezel screen">
+                                        <p class="caption">Union UI after the refresh</p>
                                         <img src="img/union_after.png">
                                     </div>
+                                    <h3>Step Two: Create a Vision</h3>
+                                    <p class="lead">When I joined Union, the inexperienced product team was focused on building features fast but without any framework at all for prioritizing one feature idea over another. The development culture lacked even the most basic narrative about target users and their needs.</p>
+                                    <p class="lead">Therefore, simultaneously with managing the GUI refresh, I embarked on a much more strategic effort to develop a UX Roadmap for Union.</p> 
+                                    <p class="lead">I cannot show here the actual output from my strategic work for Union, so instead I've created semi-schematic placeholders to tell the story of how in just a few months work I built an actionable, validated product vision for Union.</p>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_user-research.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_report-findings.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_personas.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_value-model.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_feature-priorities.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_ux-strategy.png">
+                                    </div>
+                                    <div class="bezel illustration">
+                                        <!-- <p class="caption">Union UI after the refresh</p> -->
+                                        <img src="img/union_northstar-prototype.png">
+                                    </div>
+                                    <h3>Step Three: Separate</h3>
+                                    <p class="lead">The delivery of these assets marked the end of my Union story. The company founders were pleased and impressed with my strategic work, but unwilling to implement the <a href="https://medium.com/the-effective-designer/this-is-how-product-development-works-95109dcf065d">the way of working</a> that had been part of my hiring conversation. I wish the team the best and am grateful for the learning about distributed systems, Kubernetes and orchestration workflows I gained during my time with them.</p>
                                 </div>
                             </div>
 
                         </div>
-                        <div id="lightbox" ="lightbox" onclick="clearDetails()"></div>
+                        <div class="lightbox"></div>
                     </div>
                 </section>
-                <script>
-                    // function clearDetails() {
-                    //     document.getElementById("details-union").checked = false
-                    // }
-                </script>
         <!-- ================================================== -->
         <section id="salesforce">
             <div class="section-header">
@@ -422,6 +459,7 @@
                     </div>
 
                 </div>
+                <div class="lightbox"></div> 
             </div>
         </section>
         <!-- ================================================== -->
@@ -466,8 +504,8 @@
                                 </div>
                             </div>
                     </div>
-
                 </div>
+                <div class="lightbox"></div>
             </div>
         </section>
         <!-- ================================================== -->
@@ -505,6 +543,7 @@
                     </div>
 
                 </div>
+                <div class="lightbox"></div>
             </div>
         </section>
         <!-- ================================================== -->
@@ -554,6 +593,7 @@
                     </div>
 
                 </div>
+                <div class="lightbox"></div>
             </div>
         </section>
         <p class="ellipsis">…</p>
@@ -575,6 +615,10 @@
             <a class="flex-item" href="tel:4155091902">415.509.1902</a>
         </div>
     </footer>
+    <!-- Scripts ================================================== -->
+    <script>
+
+    </script>
 </body>
 
 </html>

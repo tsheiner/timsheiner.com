@@ -168,7 +168,7 @@
     border: 1px solid #aaa;
     cursor: pointer;
     display: inline-block;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     -webkit-transition: all 0.55s;
     transition: all 0.55s;
     margin-bottom: 0;
@@ -183,7 +183,7 @@
 .details__overlay label {
     padding: 0.25em 1.5em;
     font-size: smaller;
-    margin: .2rem 10% 0 0;
+    margin-top: .2rem;
 }
 
 .details>label:hover {
@@ -282,18 +282,22 @@ input:checked~.lightbox {
 
 
 
-.details__overlay .content .column {
+/* .details__overlay .content .column {
     width: 90%;
     max-width: 980px;
     margin: 1rem auto 2rem auto;
-}
+} */
 
-.details__overlay header .column {
+.details__overlay .column {
     width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 100%;
+    /* DISPLAY: flex; */
+    /* vertical-align: MIDDLE; */
 }
 
 .details__overlay p.lead {
-    /* margin: 1rem 0 1.5rem 0; */
     font-size: 1.0rem;
 }
 
@@ -895,31 +899,6 @@ section#bridge {
     opacity: 0.5;
     width: 8rem;
 }
-
-#salesforce img.logo {
-    /* width: 130px; */
-}
-
-#jut img.logo {
-    /* width: 130px; */
-}
-
-#jaspersoft img.logo {
-    /* width: 130px; */
-}
-
-#akamai img.logo {
-    /* width: 130px; */
-}
-
-#ge img.logo {
-    /* width: 130px; */
-}
-
-#apple img.logo {
-    /* width: 130px; */
-}
-
 
 /* Footer
 -------------------------------------------------- */
