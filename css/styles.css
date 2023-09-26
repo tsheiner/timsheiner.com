@@ -644,6 +644,7 @@ section {
 
 .quarter {
     flex-basis: 24%;
+    flex-grow: unset;
 }
 
 .threequarter {
