@@ -173,10 +173,10 @@
                         <div class="column">
                             <h2>Customer Relationship Management Platform</h2>
                             <img class="logo" src="img/logo_salesforce.png">
-                            <p class="lead">During 6 years at Salesforce I worked in a variety of areas from Design Systems to IoT to Developer Experience. Below are case studies for two of the many projects I worked on.</p>
+                            <p class="lead">During 6 years at Salesforce I worked in a variety of areas from Design Systems to IoT to Developer Experience. Below are case studies for two of my more impactful projects .</p>
                             <h3>DevOps Center</h3>
                             <p>This project had two customer benefits. First, it replaced a much maligned feature called "Change Sets" that had been the only way declarative developers on the Saleforce platform could manage changes. Second, it enabled declarative and programmatic developers to collaborate on projects--something previously not possible natively on the platform--via git and a shared code repository.</p>
-                            <p>I facilitated the initial framing of the project by developing a model for DeeDee, our declarative developer persona, and then using collaborative whiteboarding sessions to create product narratives with product and engineering partners.</p>
+                            <p>I facilitated the initial framing of the project by developing persona models for us--including DeeDee, our declarative developer persona--and then using collaborative whiteboarding sessions to create product narratives with business and engineering partners.</p>
                             <div class="bezel illustration">
                                 <img src="img/salesforce_persona.png"><p class="caption">DeeDee was created by combining new interviews with existing research.</p>
                             </div>
@@ -188,7 +188,7 @@
                                 
                                 <img src="img/salesforce_projects.png"><p class="caption">Prior to DevOps Center, declarative developers had no way to organize work into projects</p>
                             </div>
-                            <p>To help ensure that design, product and engineering partners where thinking about the the technical challenges in the same way, I visualized through time the synchronization between the GUI we were building for DeeDee, the CLI commands that Pedro, her programmatic developer partner would be using and the underlying git branch model.</p>
+                            <p>To help ensure that design, business and engineering partners were thinking about the the technical challenges in the same way, I visualized through time the synchronization between the GUI we were building for DeeDee, the CLI commands that Pedro, her programmatic developer partner would be using and the underlying git branch model.</p>
                             <div class="bezel illustration">
                                 <img src="img/salesforce_doce_events.png">
                                 <p class="caption">A visualization of the synchronization model for DevOps Center</p>
@@ -199,69 +199,80 @@
                                 
                                 <img src="img/salesforce_doce_workflows.png"><p class="caption">All product workflows began as stories about DeeDee and Pedro working together</p>
                             </div>
-                            <p>I championed the "work item" as the central organizing principle for DevOps Center in order to provide DeeDee with an intuitive way to begin understanding the standard Agile model of software development. The work item then became a tangible way to represent the creation and movement of changes through the system.</p>
+                            <p>I championed the "work item" concept as the central organizing principle for DevOps Center in order to provide DeeDee with an intuitive entry point into understanding the standard Agile model of software development. The work item then also became the tangible way to represent visually the creation and movement of changes through the system.</p>
                             <div class="bezel screen">
                                 
                                 <img src="img/salesforce_changeManagement.png" alt="a form for submitting changed metatdata"><p class="caption">The work item GUI for committing changes to source control</p>
                             </div>
                             <div class="bezel screen">
                                 
-                                <img src="img/salesforce_doce_pipeline.png" alt="a kanban arrangement of release stages and work items"><p class="caption">DevOps Center introduced a visual release pipeline for tracking changes, grouped by work item, from development to production</p>
+                                <img src="img/salesforce_doce_pipeline.png" alt="a kanban arrangement of release stages and work items"><p class="caption">A visual release pipeline for tracking changes, grouped by work item, from development to production</p>
                             </div>
                             <div class="bezel screen">
                                 
                                 <img src="img/salesforce_doce_activity.png"><p class="caption">The activity history view was critical for troubleshooting errors and building trust in the system.</p>
                             </div>
+
                             <p class="ellipsis">&hellip;</p>
-                            <h3>Events, Monitoring &amp; the Internet of Things</h3>
-                            <p>To harmonize the work of several platfrom teams I developed a standard UX model for monitoring.</p>
+                            <!-- ================================================== -->
+                            <h3>IoT, Events &amp; Monitoring</h3>
+
+                            <p class="lead">Another focus area for me at Salesforce was the broad concept of monitoring, an increasinlgy important aspect of managing business operations for which Saleforce did not actually have many offerings. My work in this area began with the IoT project and then I expanded the scope from there, as described below.</p>
+
+                            <p>When I joined to the IoT project, I found that the executive leadership's focus on steady state functionality had had the side effect of the team more or less ignoring the onboarding experience. I had learned the criticality of onboarding to eventing experiences while at Jut so I decided to focus my efforts in this area. Through a consensus-building effort I managed to bring executive focus to this area and organize resources around reducing the number of set up steps from 27 when I joined down to less than 10.</p>
+                            <div class="bezel screen">
+                                
+                                <img src="img/salesforce_iot_bindEvent.png"><p class="caption">My redesign of the onboarding experience began by presenting a narrative.</p>
+                            </div>
+                            <div class="bezel screen">
+                                
+                                <img src="img/mc_iotcontext.png"><p class="caption">I re-worked the set up screen around a metaphor of connecting objects together </p>
+                            </div>
+                            <p>Debugging the orchestration logic was another huge problem area when I joined. I improved this tremendously by introducing tools to send test events, view incoming events in real time and display an activity history that showed everything the engine was doing as scrollable feed.</p>
+                            <div class="bezel screen">
+                                
+                                <img src="img/salesforce_iot_monitoring.png"><p class="caption">The Activity View made it much easier to find and debug logic errors</p>
+                            </div>
+                            <p>In order to expand the utility of the IoT feature set, I partnered with business and engineering to develop a simple UI component, called "IoT Insights" that could be placed anywhere on any Salesforce page to report current and historical events for connected objects. </p>
+                            <div class="bezel screen">
+                                
+                                <img src="img/salesforce_insights_desktop.png"><p class="caption">A great use of the Insights component was to enhance a call center support UI</p>
+                            </div>
+                            <p>After creating IoT Insights, I pursued a number of projects to increase the visibility of events on the Salesforce platform as well as enable internal feature teams to understand monitoring concepts and how they might apply to their particular features.</p>
+
+                            <p>As a first step I developed a visual model to help people understand the business processes to with event monitoring.</p>
+
                             <div class="bezel illustration">
                                 
-                                <img src="img/salesforce_monitoring_framework.png"><p class="caption">A blueprint for receiving, interpreting and responding to events of any sort.</p>
+                                <img src="img/salesforce_monitoring_framework.png"><p class="caption">A standard workflow for monitoring events </p>
                             </div>
-                            <p>I championed the simple but powerful idea of listing for a developer the events available directly in the UI without having to consult documentation.
-                            </p>
-                            <div class="bezel screen">
-                                
-                                <img src="img/salesforce_eventManager_actual.png"><p class="caption">People can't understand what they can't see.</p>
-                            </div>
-                            <p>I designed dashboards for security and operations management.
-                            </p>
-                            <div class="bezel screen">
-                                
-                                <img src="img/mc_securitycenter.png"><p class="caption">Security Dashboard</p>
-                            </div>
-                            <div class="bezel screen">
-                                
-                                <img src="img/mc_workcom.png"><p class="caption">Operations Dashboard</p>
-                            </div>
-                            <p>I championed a simple model showing how our IoT service could enable external events to trigger platform automation.</p>
+
+                            <p>I worked to show the automation team how to incorporate event-based triggers to their offering.</p>
                             <div class="bezel illustration">
                                 
                                 <img src="img/salesforce_iot_model.png"><p class="caption">Event based connections between systems is the future.
                                 </p>
                             </div>
-                            <p>For our IoT offering I focused removing friction in from our onboarding experience.</p>
-                            <div class="bezel screen">
-                                
-                                <img src="img/salesforce_iot_bindEvent.png"><p class="caption">Onboarding best practice is to tell an engaging story about realizing value. </p>
-                            </div>
-                            <div class="bezel screen">
-                                
-                                <img src="img/mc_iotcontext.png"><p class="caption">Make IoT set up feel a little bit like playing with Legos. </p>
-                            </div>
-                            <p>I developed a strategy for making it easier to debug IoT logic that included displaying, in real time, events being received and processed.
+                            
+                            <p>I championed the simple but powerful idea of listing all available events directly in the UI instead of requiring developers to consult documentation.
                             </p>
                             <div class="bezel screen">
                                 
-                                <img src="img/salesforce_iot_monitoring.png"><p class="caption">The IoT Debugger</p>
+                                <img src="img/salesforce_eventManager_actual.png"><p class="caption">Showing people what is available triggers creativity</p>
                             </div>
-                            <p>I worked with a team to bring IoT monitoring to call center case management.
+                            <p>I designed several dashboard products that brought event monitoring to operations management. One was an entirely new feature for admins that enabled them to visualize, and create alerts on, security metrics aggregated across all the nodes in their Salesforce installation.
                             </p>
                             <div class="bezel screen">
                                 
-                                <img src="img/salesforce_insights_desktop.png"><p class="caption">Timeseries gives the case agent a view into device behavior.
-                                </p>
+                                <img src="img/mc_securitycenter.png"><p class="caption">A dashboard containing standardized metric displays is easy to 'read'</p>
+                            </div>
+                            <p>A second was a centralized command center to support Salesforce's effort to provide useful tools for addressing pandemic challenges.</p>
+                            <div class="bezel screen">
+                                
+                                <img src="img/mc_workcom.png"><p class="caption">Operations Dashboard</p>
+                            </div>
+                            
+                            
                             </div>
 
                             <!-- </div> -->
